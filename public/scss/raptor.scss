@@ -34,13 +34,13 @@
 
 @import "modules/index";
 
-//== Import Alternative Module States ===================================/
-
-@import "states/index";
-
 //== Import Page-Specific Styles ========================================/
 
 @import "pages/index";
+
+//== Import Alternative Module States ===================================/
+
+@import "states/index";
 
 //== Import Project Theme Styles ========================================/
 
