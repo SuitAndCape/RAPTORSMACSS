@@ -1,6 +1,6 @@
 // _config.scss
 
-////= RAPTORSMACSS Global Configuration
+////= Global Configuration
 //======================================================================//
 
 //== Asset Paths ========================================================/
@@ -17,24 +17,16 @@ $path__img--fav: $path__img + '/favicons';
 
 //== Font Stacks ========================================================/
 
-$font-stack__sans-serif--source-sans-pro: 'Source Sans Pro' !default;
+$font-stack__sans-serif--open-sans: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $font-stack__sans-serif--verdana: Verdana, Geneva, Tahoma, 'Helvetica Neue', sans-serif !default;
-$font-stack__sans-serif--trebuchet-ms: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif !default;
 
-$font-stack__serif--aleo: 'aleoregular' !default;
+// $font-stack__serif--aleo: 'aleoregular' !default;
 $font-stack__serif--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
 $font-stack__serif--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
 
-$font-stack__monospaced--courier-new: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace !default;
-$font-stack__monospaced--courier-prime: 'Courier Prime' !default;
+$font-stack__monospaced--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 $font-stack__monospaced--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
 
-//== Font Usage =========================================================/
-
-$font--primary: $font-stack__serif--aleo;
-$font--secondary: $font-stack__sans-serif--source-sans-pro;
-$font--tertiary: $font-stack__serif--garamond;
-$font--accent: $font-stack__monospaced--courier-prime;
 
 //== Font Weights =======================================================/
 
@@ -50,7 +42,7 @@ $font-weight--heavy: 900;
 
 //== Font Sizes =========================================================/
 
-$base__font-size: 16px;
+$base__font-size: 16px !default;
 
 $font-size--xs: 80%;
 $font-size--sm: 85%;
@@ -63,7 +55,7 @@ $font-size--xl: 120%;
 $base__letter-space: 1px;
 $base__line-height: 24px;
 
-//== Descriptive Base Colors ============================================/
+//== Descriptive Main Colors ============================================/
 
 $transparent: transparent;
 $white: #FFFFFF;
@@ -113,7 +105,7 @@ $java: #1FC2C2;
 
 $pacific-blue: #009DC4;
 $prussian-blue: #003153;
-$blue-charcoal: #010D1A;
+$shark: #25272C;
 
 $studio: #714AB2;
 $purple-heart: #652DC1;
@@ -123,7 +115,9 @@ $meteorite: #3C1F76;
 
 $color--primary: $blue;
 $color--secondary: $maroon;
-$color--accent: $purple;
+$color--tertiary: $purple;
+$color--accent: $navy;
+$color--text: $shark;
 $color--shadow: rgba($black, .2);
 
 //== Color Map Palettes =================================================/

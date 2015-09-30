@@ -1,0 +1,17 @@
+// _functions.scss
+
+////= Functions
+//======================================================================//
+
+//== Convert Pixels to em Values ========================================/
+
+@function em($px-target, $font-base: $base__font-size) {
+  @return ($px-target / $font-base) * 1em;
+}
+
+//== Convert Pixels to rem Values =======================================/
+
+@function rem($px-target) {
+  $font-base: $base__font-size;
+  @return ($px-target / $font-base) * 1rem;
+}

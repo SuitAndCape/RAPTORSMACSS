@@ -1,0 +1,14 @@
+// _placeholders.scss
+
+////= Placeholders
+//======================================================================//
+
+//== Clearfix Placeholder ===============================================/
+
+%clearfix {
+  &::after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}

@@ -1,0 +1,42 @@
+// _mixins.scss
+
+// _mixins.scss
+
+////= Mixins
+//======================================================================//
+
+//== BEM Element Selector ===============================================/
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+//== BEM Modifier Selector ==============================================/
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+//== Generate Modifier Color Classes ====================================/
+
+@mixin thing-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      color: $color;
+    }
+  }
+}
+
+//== Generate Background Modifier Color Classes =========================/
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
