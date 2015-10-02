@@ -19,21 +19,26 @@
 
 /*== Thanks ============================================================*/
 
-  /*===== NAME Team =====*/
-    Name: NAME
-    Role: ROLE
-    Email: EMAIL
-    GitHub: https://github.com/USERNAME
-    Website: https://WEBSITE/
-    LinkedIn: https://www.linkedin.com/in/USERNAME
-    Dribbble: https://dribbble.com/USERNAME
-    Twitter: https://twitter.com/USERNAME
-    Instagram: https://instagram.com/USERNAME
-    Location: AREA
+  /*===== Development Team =====*/
+    Name: Molly Allison-Baker
+    Role: Brainstormer and Peer-Reviewer
+    Website: http://hermitina.com/
+    LinkedIn: https://www.linkedin.com/in/mallisonbaker
+    GitHub: https://github.com/hermitina
+    Location: Southern Bay Area
+
+    Name: Eric Lawrence Dapp
+    Role: Name and Logo Generator
+    Email: DappEr.ic@gmail.com
+    GitHub: https://github.com/e-dapp
+    Website: https://e-dapp.github.io
+    LinkedIn: https://www.linkedin.com/in/eldapp
+    Bandcamp: https://ferc.bandcamp.com/
+    Location: Southern Bay Area
 
 /*== Site Info =========================================================*/
 
-  Last update: 2015/09/29
+  Last update: 2015/10/02
   Language: English
-  Components: Sass, CSS3, HTML5, Normalize.css
+  Components: Sass, CSS3, HTML5, Normalize.css, SMACSS
   Development tools: Sublime Text 3, iTerm2
