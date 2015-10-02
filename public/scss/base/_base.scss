@@ -6,49 +6,50 @@
 //== Box-Sizing Style ===================================================/
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  -ms-box-sizing: inherit;
-  -o-box-sizing: inherit;
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-//== Body Style =========================================================/
+//== Base Body Style ====================================================/
+
+// body {
+//
+// }
+
+//== Base Header Style ==================================================/
 
 
 
-//== Text Style =========================================================/
+//== Base Text Style ====================================================/
 
 
 
-//== Links Style ========================================================/
+//== Base Links Style ===================================================/
+
+a {
+  color: $color--link;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+//== Base Lists Style ===================================================/
 
 
 
-//== Lists Style ========================================================/
+//== Base Images Style ==================================================/
 
 
 
-//== Images Style =======================================================/
+//== Base Buttons Style =================================================/
 
 
 
-//== Body Style =========================================================/
-
-
-
-//== Buttons Style ======================================================/
-
-
-
-//== Footer Style =======================================================/
+//== Base Footer Style ==================================================/
 
 

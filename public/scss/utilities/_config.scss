@@ -5,220 +5,194 @@
 
 //== Asset Paths ========================================================/
 
-$path__font: '../fonts';
-$path__img: '../images';
-$path__js: '../js';
+$path__font: '../fonts' !default;
+$path__img: '../images' !default;
+$path__js: '../js' !default;
 
-$path__img--fav: $path__img + '/favicons';
+//== Base Text Features =================================================/
 
-//== Font Sources =======================================================/
-
-
+$base__font-size: 16px !default;
+$base__letter-space: 1px !default;
+$base__line-height: 24px !default;
 
 //== Font Stacks ========================================================/
 
-$font-stack__sans-serif--open-sans: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-$font-stack__sans-serif--verdana: Verdana, Geneva, Tahoma, 'Helvetica Neue', sans-serif !default;
+/// Sans-serif font stacks
+$font-stack--open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-stack--futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
 
-// $font-stack__serif--aleo: 'aleoregular' !default;
-$font-stack__serif--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
-$font-stack__serif--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
+$font-stack--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
+$font-stack--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
 
-$font-stack__monospaced--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-$font-stack__monospaced--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
+/// Monospace font stacks
+$font-stack--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
 
+/// Variant and custom font stacks
+$font-stack--aleo: 'Aleo-regular' !default;
+$font-stack--roboto: 'Roboto-regular' !default;
 
-//== Font Weights =======================================================/
+//== Font Attributes ====================================================/
 
-$font-weight--thin: 100;
-$font-weight--ultra-light: 200;
-$font-weight--light: 300;
-$font-weight--normal: 400;
-$font-weight--medium: 500;
-$font-weight--demi-bold: 600;
-$font-weight--bold: 700;
-$font-weight--ultra-bold: 800;
-$font-weight--heavy: 900;
+/// Font weights
+$font-weight--thin: 100 !default;
+$font-weight--ultra-light: 200 !default;
+$font-weight--light: 300 !default;
+$font-weight--normal: 400 !default;
+$font-weight--medium: 500 !default;
+$font-weight--demi-bold: 600 !default;
+$font-weight--bold: 700 !default;
+$font-weight--ultra-bold: 800 !default;
+$font-weight--heavy: 900 !default;
 
-//== Font Sizes =========================================================/
+/// Font sizes
+$font-size--xs: 80% !default;
+$font-size--sm: 85% !default;
+$font-size--md: 90% !default;
+$font-size--lg: 110% !default;
+$font-size--xl: 120% !default;
 
-$base__font-size: 16px !default;
+//== Descriptive Color Variables ========================================/
 
-$font-size--xs: 80%;
-$font-size--sm: 85%;
-$font-size--md: 90%;
-$font-size--lg: 110%;
-$font-size--xl: 120%;
+/// Standard colors
+$transparent: transparent !default;
+$white: #FFFFFF !default;
+$silver: #C0C0C0 !default;
+$grey: #808080 !default;
+$black: #000000 !default;
 
-//== Text Features ======================================================/
+$red: #FF0000 !default;
+$maroon: #800000 !default;
+$brown: #A52A2A !default;
 
-$base__letter-space: 1px;
-$base__line-height: 24px;
+$yellow: #FFFF00 !default;
+$gold: #FFD700 !default;
+$orange: #FFA500 !default;
 
-//== Descriptive Main Colors ============================================/
+$lime: #00FF00 !default;
+$green: #008000 !default;
+$olive: #808000 !default;
 
-$transparent: transparent;
-$white: #FFFFFF;
-$silver: #C0C0C0;
-$grey: #808080;
-$black: #000000;
+$aqua: #00FFFF !default;
+$teal: #008080 !default;
+$blue: #0000FF !default;
+$navy: #000080 !default;
 
-$red: #FF0000;
-$maroon: #800000;
-$brown: #A52A2A;
+$fuchsia: #FF00FF !default;
+$purple: #800080 !default;
+$indigo: #4B0082 !default;
 
-$yellow: #FFFF00;
-$gold: #FFD700;
-$orange: #FFA500;
+/// Variant and custom colors
+$wild-sand: #F4F4F4 !default;
+$porcelain: #EFF2F3 !default;
+$ebony: #0C0B1D !default;
+$cod-gray: #0B0B0B !default;
 
-$lime: #00FF00;
-$green: #008000;
-$olive: #808000;
+$guardsman-red: #BA0101 !default;
+$monza: #C7031E !default;
+$crimson: #DC143C !default;
 
-$aqua: #00FFFF;
-$teal: #008080;
-$blue: #0000FF;
-$navy: #000080;
+$sun-glow: #FFCC33 !default;
+$tango: #ED7A1C !default;
+$coral: #FF7F50 !default;
 
-$fuchsia: #FF00FF;
-$purple: #800080;
-$indigo: #4B0082;
+$jungle-green: #29AB87 !default;
+$emerald: #5ECE7F !default;
+$java: #1FC2C2 !default;
 
-//== Descriptive Variant Colors =========================================/
+$pacific-blue: #009DC4 !default;
+$prussian-blue: #003153 !default;
+$shark: #25272C !default;
 
-$wild-sand: #F4F4F4;
-$porcelain: #EFF2F3;
-$ebony-clay: #222F40;
-$cod-gray: #0B0B0B;
-
-$guardsman-red: #BA0101;
-$monza: #C7031E;
-$crimson: #DC143C;
-
-$sun-glow: #FFCC33;
-$tango: #ED7A1C;
-$coral: #FF7F50;
-
-$jungle-green: #29AB87;
-$emerald: #5ECE7F;
-$java: #1FC2C2;
-
-$pacific-blue: #009DC4;
-$prussian-blue: #003153;
-$shark: #25272C;
-
-$studio: #714AB2;
-$purple-heart: #652DC1;
-$meteorite: #3C1F76;
-
-//== Color Usage ========================================================/
-
-$color--primary: $blue;
-$color--secondary: $maroon;
-$color--tertiary: $purple;
-$color--accent: $navy;
-$color--text: $shark;
-$color--shadow: rgba($black, .2);
-
-//== Color Map Palettes =================================================/
-
-$ui-palette: (
-  clear: $transparent,
-  cool: $pacific-blue,
-  dim: $cod-gray,
-  error: $monza,
-  info: $studio,
-  luminous: $wild-sand,
-  missing: $sun-glow,
-  success: $jungle-green,
-  warm: $coral,
-  warning: $crimson
-);
-
-$achromatic-palette: (
-  white-mod: (
-    xxxlgt: lighten($white, 48%),
-    xxlgt: lighten($white, 30%),
-    xlgt: lighten($white, 16%),
-    lgt: lighten($white, 8%),
-    def: $white,
-    drk: darken($white, 8%),
-    xdrk: darken($white, 16%),
-    xxdrk: darken($white, 30%),
-    xxxdrk: darken($white, 48%)
-  ),
-  grey-mod: (
-    xxxlgt: lighten($grey, 48%),
-    xxlgt: lighten($grey, 30%),
-    xlgt: lighten($grey, 16%),
-    lgt: lighten($grey, 8%),
-    def: $grey,
-    drk: darken($grey, 8%),
-    xdrk: darken($grey, 16%),
-    xxdrk: darken($grey, 30%),
-    xxxdrk: darken($grey, 48%)
-  ),
-  black-mod: (
-    xxxlgt: lighten($black, 48%),
-    xxlgt: lighten($black, 30%),
-    xlgt: lighten($black, 16%),
-    lgt: lighten($black, 8%),
-    def: $black,
-    drk: darken($black, 8%),
-    xdrk: darken($black, 16%),
-    xxdrk: darken($black, 30%),
-    xxxdrk: darken($black, 48%)
-  )
-);
+$studio: #714AB2 !default;
+$purple-heart: #652DC1 !default;
+$meteorite: #3C1F76 !default;
 
 //== Grid Features ======================================================/
 
-$grid-container-width: 72em;
-$grid-col-total: 12;
-$grid-col-width: 6.5%;
-$grid-gutter-width: 2%;
+$grid-container-width: 1200px !default;
+$grid-col-total: 12 !default;
+$grid-col-width: 6.5% !default;
+$grid-gutter-width: 2% !default;
 
-//== Border Radius ======================================================/
+//== Various Variables ==================================================/
 
-$border-rad--default: .3em;
-$border-rad--curve: 25%;
-$border-rad--round: 50%;
+/// Border radii
+$radius--default: .23em !default;
+$radius--curve: 25% !default;
+$radius--round: 50% !default;
 
-//== Durations ==========================================================/
+/// Transition durations
+$xxqck: .15s !default;
+$xqck: .3s !default;
+$qck: .5s !default;
+$norm: 1s !default;
+$slw: 1.5s !default;
+$xslw: 2s !default;
+$xxslw: 2.5s !default;
 
-$speed--xxqck: .15s;
-$speed--xqck: .3s;
-$speed--qck: .5s;
-$speed--md: 1s;
-$speed--slw: 1.5s;
-$speed--xslw: 1.7s;
-$speed--xxslw: 1.85s;
+/// Transition Cubic Bézier functions
+$ease: cubic-bezier(.250, .100, .250, 1) !default;
+$ease-in: cubic-bezier(.420, 0, 1, 1) !default;
+$ease-out: cubic-bezier(0, 0, .580, 1) !default;
+$ease-in-out: cubic-bezier(.420, 0, .580, 1) !default;
+$linear: cubic-bezier(0, 0, 1, 1) !default;
 
-//== Transition Functions ===============================================/
+//== Configuration Maps =================================================/
 
-$trans-func--ease: cubic-bezier(.25, .1, .25, 1);
-$trans-func--ease-in: cubic-bezier(.42, 0, 1, 1);
-$trans-func--ease-out: cubic-bezier(0, 0, .58, 1);
-$trans-func--ease-in-out: cubic-bezier(.42, 0, .58, 1);
-$trans-func--linear: cubic-bezier(0, 0, 1, 1);
+/// Transition Cubic Bézier function map
+/// Used with `ease` function
+$eases: (
+  'in-quad': cubic-bezier(.550, .085, .680, .530),
+  'in-cubic': cubic-bezier(.550, .055, .675, .190),
+  'in-quart': cubic-bezier(.895, .030, .685, .220),
+  'in-quint': cubic-bezier(.755, .050, .855, .060),
+  'in-sine': cubic-bezier(.470, 0, .745, .715),
+  'in-expo': cubic-bezier(.950, .050, .795, .035),
+  'in-circ': cubic-bezier(.600, .040, .980, .335),
+  'in-back': cubic-bezier(.600, -.280, .735, .045),
+  'out-quad': cubic-bezier(.250, .460, .450, .940),
+  'out-cubic': cubic-bezier(.215, .610, .355, 1),
+  'out-quart': cubic-bezier(.165, .840, .440, 1),
+  'out-quint': cubic-bezier(.230, 1, .320, 1),
+  'out-sine': cubic-bezier(.390, .575, .565, 1),
+  'out-expo': cubic-bezier(.190, 1, .220, 1),
+  'out-circ': cubic-bezier(.075, .820, .165, 1),
+  'out-back': cubic-bezier(.175, .885, .320, 1.275),
+  'in-out-quad': cubic-bezier(.455, .030, .515, .955),
+  'in-out-cubic': cubic-bezier(.645, .045, .355, 1),
+  'in-out-quart': cubic-bezier(.770, 0, .175, 1),
+  'in-out-quint': cubic-bezier(.860, 0, .070, 1),
+  'in-out-sine': cubic-bezier(.445, .050, .550, .950),
+  'in-out-expo': cubic-bezier(1, 0, 0, 1),
+  'in-out-circ': cubic-bezier(.785, .135, .150, .860),
+  'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
+) !default;
 
-//== Media Query Breakpoints ============================================/
+/// Breakpoints map
+/// Used with `respond-to` mixin
+$breakpoints: (
+  'xxxs': (min-width: 320px),
+  'xxs': (min-width: 480px),
+  'xs': (min-width: 640px),
+  'sm': (min-width: 768px),
+  'md': (min-width: 992px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1440px),
+  'xxxl': (min-width: 1920px)
+) !default;
 
-$display--xxxs: 320px !default;
-$display--xxxs-min: $display--xxxs !default;
-$display--xxs: 480px !default;
-$display--xxs-min: $display--xxs !default;
-$display--xs: 640px !default;
-$display--xs-min: $display--xs !default;
-$display--sm: 768px !default;
-$display--sm-min: $display--sm !default;
-$display--md: 992px !default;
-$display--md-min: $display--md !default;
-$display--lg: 1024px !default;
-$display--lg-min: $display--lg !default;
-$display--xl: 1200px !default;
-$display--xl-min: $display--xl !default;
-$display--xxl: 1440px !default;
-$display--xxl-min: $display--xxl !default;
-$display--xxxl: 1920px !default;
-$display--xxxl-min: $display--xxxl !default;
+/// Z-indexing map
+$zindices: (
+  'over': 9001,
+  'modal': 9000,
+  'overlay': 8000,
+  'dropdown': 7000,
+  'high': 6000,
+  'mid': 5000,
+  'low': 4000,
+  'base': 1,
+  'below': -1,
+  'abyss': -9000
+) !default;
