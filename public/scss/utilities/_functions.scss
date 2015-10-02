@@ -3,15 +3,49 @@
 ////= Functions
 //======================================================================//
 
-//== Convert Pixels to em Values ========================================/
+//== Pixel Conversion ===================================================/
 
-@function em($px-target, $font-base: $base__font-size) {
-  @return ($px-target / $font-base) * 1em;
+/// Convert pixels to em values
+@function pxem($px-target, $px-compared: $base__font-size) {
+  @return ($px-target / $px-compared) * 1em;
 }
 
-//== Convert Pixels to rem Values =======================================/
+/// Convert pixels to rem values
+@function pxrem($px-target) {
+  $px-compared: $base__font-size;
+  @return ($px-target / $px-compared) * 1rem;
+}
 
-@function rem($px-target) {
-  $font-base: $base__font-size;
-  @return ($px-target / $font-base) * 1rem;
+//== Color Tone Adjusters ===============================================/
+
+/// Increase the level of blackness in a color by a certain percentage
+@function tone-down($color, $percent) {
+  @return mix($black, $color, $percent);
+}
+
+/// Increase the level of whiteness in a color by a certain percentage
+@function tone-up($color, $percent) {
+  @return mix($white, $color, $percent);
+}
+
+//== Sass Map Functions =================================================/
+
+/// Z-indexer
+/// @requires $zindices
+@function z($key) {
+  @return map-get($zindices, $key);
+}
+
+/// Cubic Bézier manager
+/// @param {String} $key - Cubic Bézier option
+/// @requires $eases
+/// @modifier Ali Esmaili
+/// @link https://css-tricks.com/snippets/sass/easing-map-get-function/
+@function ease($key) {
+  @if map-has-key($eases, $key) {
+    @return map-get($eases, $key);
+  }
+
+  @warn 'Unknown `#{$key}` in $eases.';
+  @return null;
 }

@@ -35,5 +35,5 @@
 
   Last update: 2015/09/29
   Language: English
-  Components: Sass, CSS3, HTML5
+  Components: Sass, CSS3, HTML5, Normalize.css
   Development tools: Sublime Text 3, iTerm2

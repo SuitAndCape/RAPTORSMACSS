@@ -3,14 +3,52 @@
 ////= Global Variable Assignments
 //======================================================================//
 
+//== Asset Path Usage ===================================================/
+
+$fav: $path__img + '/favicons';
+$logo: $path__img + '/logos';
+
 //== Font Usage =========================================================/
 
-// $font--primary: $font-stack__serif--aleo;
-// $font--secondary: $font-stack__sans-serif--source-sans-pro;
-// $font--tertiary: $font-stack__serif--garamond;
-// $font--accent: $font-stack__monospaced--courier-prime;
+$font--primary: $font-stack--aleo;
+$font--secondary: $font-stack--futura;
+$font--tertiary: $font-stack--garamond;
+$font--accent: $font-stack--courier-new;
 
-$text--primary: $font-stack__sans-serif--open-sans;
-$text--secondary: $font-stack__sans-serif--verdana;
-$text--tertiary: $font-stack__serif--garamond;
-$text--accent: $font-stack__monospaced--courier-new;
+// $font--code: $XXXXXX;
+// $font--link: $XXXXXX;
+// $font--note: $XXXXXX;
+$font--text: $font-stack--roboto;
+
+//== Color Usage ========================================================/
+
+$color--clear: $transparent;
+$color--primary: $blue;
+$color--secondary: $maroon;
+$color--tertiary: $purple;
+$color--accent: $navy;
+$color--shadow: rgba($black, .18);
+
+$color--code: $porcelain;
+$color--link: $java;
+$color--note: $grey;
+$color--text: $shark;
+
+//== Assigned Color Maps ================================================/
+
+$ui-map: (
+  'error': $monza,
+  'info': $studio,
+  'important': $crimson,
+  'missing': $sun-glow,
+  'notice': $purple-heart,
+  'success': $jungle-green,
+  'warning': $tango
+);
+
+$mood-map: (
+  'cool': $pacific-blue,
+  'dim': $cod-gray,
+  'luminous': $wild-sand,
+  'warm': $coral
+);

@@ -3,30 +3,22 @@
 ////= Utilities Manifest
 //======================================================================//
 
-//== Import Font Mixins =================================================/
-
-// @import "font_mixins";
-
 //== Import Global Configuration ========================================/
 
-@import "config";
+@import 'config';
 
 //== Import Global Variable Assignments =================================/
 
-@import "variables";
+@import 'variables';
 
 //== Import Functions ===================================================/
 
-@import "functions";
-
-//== Import Helpers =====================================================/
-
-@import "helpers";
+@import 'functions';
 
 //== Import Mixins ======================================================/
 
-@import "mixins";
+@import 'mixins';
 
-//== Import Placeholders ================================================/
+//== Import Helpers =====================================================/
 
-@import "placeholders";
+@import 'helpers';
