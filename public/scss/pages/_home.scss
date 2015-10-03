@@ -4,17 +4,16 @@
 //======================================================================//
 
 .home {
-  @extend .center-align;
+
+  @include el(headline) {
+    @extend .center-align;
+  }
+
+  @include el(footline) {
+    @extend .center-align;
+  }
+
+  // @include el(image) {
+    //
+  // }
 }
-
-// .home__title {
-  //
-// }
-
-.home__footer {
-  @extend .center-align;
-}
-
-// .home__img {
-  //
-// }

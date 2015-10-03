@@ -3,15 +3,14 @@
 ////= Navigation Styling
 //======================================================================//
 
-// .nav {
-  //
-// }
+.nav {
 
-.nav a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-/// Remove default list styling from navigation
-.nav ul {
-  @extend .no-bullets;
+  /// Remove default list styling from navigation
+  ul {
+    @extend .no-bullets;
+  }
 }
