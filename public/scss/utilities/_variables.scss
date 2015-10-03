@@ -36,6 +36,8 @@ $text-color: $shark; // _typography => body {color: $text-color;}
 
 //== Math Variable Usage ================================================/
 
+$main-font-size: $width--md-fnt;
+
 $main-br: $radius--slight;
 
 $main-speed: $speed--xqck; // _base => a,button {transition: $main-speed;}
