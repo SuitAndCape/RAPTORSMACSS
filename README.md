@@ -5,6 +5,8 @@ RAPTORSMACSS
 
 **R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S** is a Sass (SCSS) project skeleton, based on the [SMACSS](https://smacss.com/) architecture pattern and the [BEM](https://en.bem.info/method/definitions/) methodology.
 
+## Version 1.0.1
+
 ## Contents
 
 - [Title](#raptorsmacss)
