@@ -19,9 +19,9 @@ Stories, MVP, Specs, and Pseudocode
 
 ## Minimum Viable Product
 
-- A total of nine sections
+- Seven to nine sections
   + Vendors
-  + Vendor Overrides
+  + Vendor Overrides (_maybe..._)
   + Utilities
   + Base
   + Layout

@@ -25,7 +25,7 @@
 
 /// Element color map modifier
 /// @param {String} $color-map - Assigned color map's name
-/// @requires _variables => Assigned Color Map
+/// @requires _variables => Assigned Color Maps
 /// @example
 //
 // $color-map: (
@@ -48,7 +48,19 @@
 
 /// Background color map modifier
 /// @param {String} $color-map - Assigned color map's name
-/// @requires _variables => Assigned Color Map
+/// @requires _variables => Assigned Color Maps
+/// @example
+//
+// $color-map: (
+//   'color-key': $color-value
+// );
+//
+// .fake-selector {
+//   @include bg-colors($color-map)
+// }
+//
+// <mock-tag class="fake-selector--color-key">
+//
 @mixin bg-colors($color-map) {
   @each $key, $value in $color-map {
     &--#{$key} {

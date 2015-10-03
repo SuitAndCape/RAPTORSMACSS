@@ -2,42 +2,35 @@
 
 /// RAPTORSMACSS v1.0.1
   /// SOURCE: https://github.com/SuitAndCape/RAPTORSMACSS
-  /// Copyright (c) 2013-2015 Ali Esmaili | SuitAndCape
+  /// Authored by Ali Esmaili
+  /// Copyright (c) 2015 Ali Esmaili | SuitAndCape
   /// MIT: https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/LICENSE
 
-////= RAPTORSCMACSS Main Manifest
+////= RAPTORSMACSS Main Manifest
 //======================================================================//
 
 @charset 'UTF-8';
 
-//== Import Vendor Dependencies =========================================/
-
+/// Import vendor dependencies
 @import 'vendors/index';
 
-//== Import Vendor Overrides =========================================/
-
+/// Import vendor overrides
 @import 'vendor-overrides/index';
 
-//== Import Project Tools ===============================================/
-
+/// Import project tools
 @import 'utilities/index';
 
-//== Import Project Groundwork ==========================================/
-
+/// Import project groundwork
 @import 'base/index';
 
-//== Import Project Structure ===========================================/
-
+/// Import project structure
 @import 'layout/index';
 
-//== Import Project Components ==========================================/
-
+/// Import project components
 @import 'modules/index';
 
-//== Import Page-Specific Styles ========================================/
-
+/// Import page-specific styles
 @import 'pages/index';
 
-//== Import Project Theme Styles ========================================/
-
+/// Import project theme styles
 @import 'themes/index';

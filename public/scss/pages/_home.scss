@@ -1,8 +1,20 @@
 // _home.scss
 
-////= Home Section Styling
+////= Home Page Styling
 //======================================================================//
 
-.home-section {
+.home {
   @extend .center-align;
 }
+
+// .home__title {
+  //
+// }
+
+.home__footer {
+  @extend .center-align;
+}
+
+// .home__img {
+  //
+// }

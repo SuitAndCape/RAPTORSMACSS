@@ -4,6 +4,31 @@
 //======================================================================//
 
 body {
-  color: $color--text;
-  font: pxem(40) $font--text;
+  color: $text-color;
+  font: pxem(20px) $text-font;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote,
+dfn {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: pxem(36px);
 }

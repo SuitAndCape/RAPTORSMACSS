@@ -3,30 +3,26 @@
 ////= Layout Manifest
 //======================================================================//
 
-//== Import Grid Styling ================================================/
-
+/// Import grid styling
 @import 'grid';
 
-//== Import Header Styling ==============================================/
-
+/// Import header styling
 @import 'header';
 
-//== Import Main Container Styling ======================================/
-
+/// Import main container styling
 @import 'main';
 
-//== Import Footer Styling ==============================================/
-
+/// Import footer styling
 @import 'footer';
 
-//== Import Navigation Styling ==========================================/
+/// Import article styling
+@import 'article';
 
+/// Import navigation styling
 @import 'nav';
 
-//== Import Sidebar Styling =============================================/
-
+/// Import sidebar styling
 @import 'sidebar';
 
-//== Import Forms Styling ===============================================/
-
+/// Import forms styling
 @import 'forms';

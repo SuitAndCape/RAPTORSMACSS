@@ -3,22 +3,17 @@
 ////= Utilities Manifest
 //======================================================================//
 
-//== Import Global Configuration ========================================/
-
+/// Import global configuration
 @import 'config';
 
-//== Import Global Variable Assignments =================================/
-
+/// Import global variable assignments
 @import 'variables';
 
-//== Import Functions ===================================================/
-
+/// Import functions
 @import 'functions';
 
-//== Import Mixins ======================================================/
-
+/// Import mixins
 @import 'mixins';
 
-//== Import Helpers =====================================================/
-
+/// Import helpers
 @import 'helpers';

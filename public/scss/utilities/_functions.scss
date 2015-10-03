@@ -19,22 +19,16 @@
 //== Color Tone Adjusters ===============================================/
 
 /// Increase the level of blackness in a color by a certain percentage
-@function tone-down($color, $percent) {
+@function blacker($color, $percent) {
   @return mix($black, $color, $percent);
 }
 
 /// Increase the level of whiteness in a color by a certain percentage
-@function tone-up($color, $percent) {
+@function whiter($color, $percent) {
   @return mix($white, $color, $percent);
 }
 
 //== Sass Map Functions =================================================/
-
-/// Z-indexer
-/// @requires $zindices
-@function z($key) {
-  @return map-get($zindices, $key);
-}
 
 /// Cubic Bézier manager
 /// @param {String} $key - Cubic Bézier option
@@ -48,4 +42,10 @@
 
   @warn 'Unknown `#{$key}` in $eases.';
   @return null;
+}
+
+/// Z-indexer
+/// @requires $zindices
+@function z($key) {
+  @return map-get($zindices, $key);
 }

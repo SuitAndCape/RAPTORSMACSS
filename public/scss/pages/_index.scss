@@ -3,14 +3,14 @@
 ////= Pages Manifest
 //======================================================================//
 
-//== Home Section Styling ===============================================/
-
+/// Home page styling
 @import 'home';
 
-//== About Section Styling ==============================================/
+/// About page styling
+@import 'about';
 
-// @import 'about';
+/// Blog page styling
+@import 'blog';
 
-//== Article Styling ====================================================/
-
-// @import 'article';
+/// Post page styling
+@import 'post';

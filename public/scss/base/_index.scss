@@ -3,18 +3,14 @@
 ////= Base Manifest
 //======================================================================//
 
-//== Import Base Styling ================================================/
-
+/// Import base styling
 @import 'base';
 
-//== Import Additional Fonts ============================================/
-
+/// Import additional fonts
 @import 'fonts';
 
-//== Import Additional Icons ============================================/
-
+/// Import additional icons
 @import 'icons';
 
-//== Import Typographic Styling =========================================/
-
-// @import 'typography';
+/// Import typographic styling
+@import 'typography';

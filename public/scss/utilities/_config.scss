@@ -55,7 +55,8 @@ $font-size--xl: 120% !default;
 //== Descriptive Color Variables ========================================/
 
 /// Standard colors
-$transparent: transparent !default;
+$clear: transparent !default;
+
 $white: #FFFFFF !default;
 $silver: #C0C0C0 !default;
 $grey: #808080 !default;
@@ -101,6 +102,7 @@ $emerald: #5ECE7F !default;
 $java: #1FC2C2 !default;
 
 $pacific-blue: #009DC4 !default;
+$lochmara: #007EC7 !default;
 $prussian-blue: #003153 !default;
 $shark: #25272C !default;
 
@@ -108,28 +110,26 @@ $studio: #714AB2 !default;
 $purple-heart: #652DC1 !default;
 $meteorite: #3C1F76 !default;
 
-//== Grid Features ======================================================/
+//== Math Variables =====================================================/
 
-$grid-container-width: 1200px !default;
+/// Border radii
+$radius--slight: .23em !default;
+$radius--curve: 25% !default;
+$radius--round: 50% !default;
+
+// Grid features
 $grid-col-total: 12 !default;
 $grid-col-width: 6.5% !default;
 $grid-gutter-width: 2% !default;
 
-//== Various Variables ==================================================/
-
-/// Border radii
-$radius--default: .23em !default;
-$radius--curve: 25% !default;
-$radius--round: 50% !default;
-
 /// Transition durations
-$xxqck: .15s !default;
-$xqck: .3s !default;
-$qck: .5s !default;
-$norm: 1s !default;
-$slw: 1.5s !default;
-$xslw: 2s !default;
-$xxslw: 2.5s !default;
+$speed--xxqck: .15s !default;
+$speed--xqck: .3s !default;
+$speed--qck: .5s !default;
+$speed--norm: 1s !default;
+$speed--slw: 1.5s !default;
+$speed--xslw: 2s !default;
+$speed--xxslw: 2.5s !default;
 
 /// Transition Cubic Bézier functions
 $ease: cubic-bezier(.250, .100, .250, 1) !default;
@@ -138,10 +138,35 @@ $ease-out: cubic-bezier(0, 0, .580, 1) !default;
 $ease-in-out: cubic-bezier(.420, 0, .580, 1) !default;
 $linear: cubic-bezier(0, 0, 1, 1) !default;
 
+/// Widths
+$width--xxxs: 320px;
+$width--xxs: 480px;
+$width--xs: 640px;
+$width--sm: 768px;
+$width--md: 992px;
+$width--lg: 1024px;
+$width--xl: 1200px;
+$width--xxl: 1440px;
+$width--xxxl: 1920px;
+
 //== Configuration Maps =================================================/
 
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxs': (min-width: 320px),
+  'xxs': (min-width: 480px),
+  'xs': (min-width: 640px),
+  'sm': (min-width: 768px),
+  'md': (min-width: 992px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1440px),
+  'xxxl': (min-width: 1920px)
+) !default;
+
 /// Transition Cubic Bézier function map
-/// Used with `ease` function
+/// Used with @ease function
 $eases: (
   'in-quad': cubic-bezier(.550, .085, .680, .530),
   'in-cubic': cubic-bezier(.550, .055, .675, .190),
@@ -169,21 +194,8 @@ $eases: (
   'in-out-back': cubic-bezier(.680, -.550, .265, 1.550)
 ) !default;
 
-/// Breakpoints map
-/// Used with `respond-to` mixin
-$breakpoints: (
-  'xxxs': (min-width: 320px),
-  'xxs': (min-width: 480px),
-  'xs': (min-width: 640px),
-  'sm': (min-width: 768px),
-  'md': (min-width: 992px),
-  'lg': (min-width: 1024px),
-  'xl': (min-width: 1200px),
-  'xxl': (min-width: 1440px),
-  'xxxl': (min-width: 1920px)
-) !default;
-
 /// Z-indexing map
+/// Used with @z function
 $zindices: (
   'over': 9001,
   'modal': 9000,

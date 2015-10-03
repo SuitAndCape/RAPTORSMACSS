@@ -10,29 +10,37 @@ $logo: $path__img + '/logos';
 
 //== Font Usage =========================================================/
 
-$font--primary: $font-stack--aleo;
-$font--secondary: $font-stack--futura;
-$font--tertiary: $font-stack--garamond;
-$font--accent: $font-stack--courier-new;
+$primary-font: $font-stack--aleo;
+$secondary-font: $font-stack--futura;
+$tertiary-font: $font-stack--garamond;
+$accent-font: $font-stack--courier-new;
 
-// $font--code: $XXXXXX;
-// $font--link: $XXXXXX;
-// $font--note: $XXXXXX;
-$font--text: $font-stack--roboto;
+// $code-font: $XXXXXX;
+// $link-font: $XXXXXX;
+// $note-font: $XXXXXX;
+$text-font: $font-stack--roboto; // _typography => body {font: pxem(40) $text-font;}
 
 //== Color Usage ========================================================/
 
-$color--clear: $transparent;
-$color--primary: $blue;
-$color--secondary: $maroon;
-$color--tertiary: $purple;
-$color--accent: $navy;
-$color--shadow: rgba($black, .18);
+$primary-color: $blue;
+$secondary-color: $maroon;
+$tertiary-color: $purple;
+$accent-color: $navy;
+$shadow-color: rgba($black, .18);
 
-$color--code: $porcelain;
-$color--link: $java;
-$color--note: $grey;
-$color--text: $shark;
+$backg-color: $lochmara; // _base => body {background: $backg-color;}
+$code-color: $porcelain;
+$link-color: $java; // _base => a {background: $link-color;}
+$note-color: $grey;
+$text-color: $shark; // _typography => body {color: $text-color;}
+
+//== Math Variable Usage ================================================/
+
+$main-br: $radius--slight;
+
+$main-speed: $speed--xqck; // _base => a,button {transition: $main-speed;}
+
+$max-grid-width: $width--xl; // _helpers => .container {max-width: $max-grid-width;}
 
 //== Assigned Color Maps ================================================/
 
