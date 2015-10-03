@@ -6,9 +6,9 @@
 html {
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
-  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: $clear;
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -59,8 +59,8 @@ input {
 button {
   background: none;
   border: 0;
-  cursor: pointer;
   letter-spacing: inherit;
+  cursor: pointer;
   overflow: visible;
   -webkit-font-smoothing: inherit;
 
