@@ -3,26 +3,29 @@
 ////= Layout Manifest
 //======================================================================//
 
-/// Import grid styling
-@import 'grid';
+/// Import division container styling
+@import 'container';
 
-/// Import header styling
-@import 'header';
+/// Import column styling
+@import 'column';
 
-/// Import main container styling
-@import 'main';
+/// Import row styling
+@import 'row';
 
-/// Import footer styling
-@import 'footer';
+/// Import header banner styling
+@import 'header-banner';
 
-/// Import article styling
-@import 'article';
+/// Import content info styling
+@import 'footer-root';
+
+/// Import main content styling
+@import 'main-principal';
+
+/// Import article composition styling
+@import 'article-composition';
+
+/// Import complimentary content styling
+@import 'aside-sidebar';
 
 /// Import navigation styling
-@import 'nav';
-
-/// Import sidebar styling
-@import 'sidebar';
-
-/// Import forms styling
-@import 'forms';
+@import 'nav-navbar';

@@ -1,11 +1,10 @@
-// _about.scss
+// _about-page.scss
 
 ////= About Page Styling
 //======================================================================//
 
-// .about {
-
-  // @include el(photo) {
-    //
-  // }
-// }
+.about-page {
+  @include el(photo) {
+    border-radius: $round-radius;
+  }
+}

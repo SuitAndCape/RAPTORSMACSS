@@ -1,0 +1,28 @@
+// _header-banner.scss
+
+////= Header Banner Styling
+//======================================================================//
+
+.header,
+.banner {
+  @extend .center-align;
+  @extend .clearfix;
+  background-color: $demo-bg-b; //=> DEMO CODE <=//
+  position: relative;
+
+  @include el(demo-headline) { //=> DEMO CODE <=//
+    @extend .banner; //=> DEMO CODE <=//
+    color: $primary-color; //=> DEMO CODE <=//
+    font-family: $primary-font; //=> DEMO CODE <=//
+    font-size: $lg-font-size; //=> DEMO CODE <=//
+    padding-top: pxem(20px); //=> DEMO CODE <=//
+  } //=> DEMO CODE <=//
+
+  @include el(demo) { //=> DEMO CODE <=//
+    @extend .banner; //=> DEMO CODE <=//
+    background-color: $demo-bg-a; //=> DEMO CODE <=//
+    color: $secondary-color; //=> DEMO CODE <=//
+    font-family: $secondary-font; //=> DEMO CODE <=//
+    line-height: pxem(200px); //=> DEMO CODE <=//
+  } //=> DEMO CODE <=//
+}

@@ -1,6 +1,6 @@
 // raptor.scss
 
-/// RAPTORSMACSS v1.0.1
+/// RAPTORSMACSS v1.1.0
   /// SOURCE: https://github.com/SuitAndCape/RAPTORSMACSS
   /// Authored by Ali Esmaili
   /// Copyright (c) 2015 Ali Esmaili | SuitAndCape
@@ -19,6 +19,9 @@
 
 /// Import project tools
 @import 'utilities/index';
+
+/// Import project tools
+@import 'extends/index';
 
 /// Import project groundwork
 @import 'base/index';

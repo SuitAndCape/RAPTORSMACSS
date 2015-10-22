@@ -3,7 +3,7 @@
 ////= Mixins
 //======================================================================//
 
-//== BEM Syntax =========================================================/
+//== Standard Input Mixins ==============================================/
 
 /// BEM Block Element selector
 /// @param {String} $element - Element's name
@@ -21,6 +21,19 @@
   }
 }
 
+/// Background image assignment and features
+/// @param {String} $image-path - Path to image
+/// @param {String} $name - Name of image
+/// @param {Length(s)} $length - Optional length width or width and height
+/// @requires _variables => Asset paths
+@mixin background-img($image-path, $name, $length:false) {
+  background-image: url('#{$image-path}/#{$name}');
+
+  @if($length) {
+    background-size: $length;
+  }
+}
+
 //== Sass Map Mixins ====================================================/
 
 /// Element color map modifier
@@ -33,12 +46,12 @@
 // );
 //
 // .mock-selector {
-//   @include elem-colors($color-map)
+//   @include mo-colors($color-map)
 // }
 //
 // <fake-tag class="mock-selector--color-key">
 //
-@mixin elem-colors($color-map) {
+@mixin mo-colors($color-map) {
   @each $key, $value in $color-map {
     &--#{$key} {
       color: $value;
@@ -71,16 +84,17 @@
 
 /// Responsive manager
 /// @param {String} $key - Breakpoint
-/// @requires $breakpoints
+/// @requires _config => $breakpoints
+/// @modifier Ali Esmaili
 /// @link http://sass-guidelin.es/#breakpoint-manager
 @mixin respond-to($key) {
-  $query: map-get($breakpoints, $key);
+  $value: map-get($breakpoints, $key);
 
-  @if not $query {
+  @if not $value {
     @error 'No value found for `#{$key}`. Please make sure it is defined in `$breakpoints` map.';
   }
 
-  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+  @media #{if(type-of($value) == 'string', unquote($value), inspect($value))} {
     @content;
   }
 }

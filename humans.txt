@@ -38,7 +38,7 @@
 
 /*== Site Info =========================================================*/
 
-  Last update: 2015/10/02
+  Last update: 2015/10/21
   Language: English
-  Components: Sass, CSS3, HTML5, Normalize.css, SMACSS
-  Development tools: Sublime Text 3, iTerm2
+  Components: Sass, CSS3, HTML5, Normalize.css
+  Development tools: Sublime Text 3, iTerm2, scss-lint, SublimeLinter

@@ -6,8 +6,8 @@ Stories, MVP, Specs, and Pseudocode
 ## User Stories
 
 1. I want to use RAPTORSMACSS for any project I can use Sass (SCSS) in
-2. I want RAPTORSMACSS to employ SMACSS
-3. I want RAPTORSMACSS to employ BEM naming conventions
+2. I want RAPTORSMACSS to be based on SMACSS
+3. I want RAPTORSMACSS to (optionally) employ BEM naming conventions
   - Harry Roberts' style
     + `.block {}`
     + `.block__element {}`
@@ -19,14 +19,15 @@ Stories, MVP, Specs, and Pseudocode
 
 ## Minimum Viable Product
 
-- Seven to nine sections
+- Seven to ten sections
   + Vendors
   + Vendor Overrides (_maybe..._)
   + Utilities
+  + Extends (_maybe..._)
   + Base
   + Layout
   + Modules
   + Pages
   + States (_maybe..._)
   + Themes
-- Include only necessary or exemplary code
+- Include only necessary, exemplary, or demonstrative code

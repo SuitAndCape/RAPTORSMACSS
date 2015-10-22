@@ -3,9 +3,10 @@
 RAPTORSMACSS
 ==========================================================================
 
-**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S** is a Sass (SCSS) project skeleton, based on the [SMACSS](https://smacss.com/) architecture pattern and the [BEM](https://en.bem.info/method/definitions/) methodology.
+**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a Sass (SCSS) boilerplate, loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern.
+The naming convention is [BEM](https://en.bem.info/method/definitions/) based at its roots, but implemented in a way that the user can use whichever naming convention they prefer.
 
-## Version 1.0.1
+## Version 1.1.0
 
 ## Contents
 
@@ -13,8 +14,11 @@ RAPTORSMACSS
 - [Requirements](#requirements)
 - [Download](#download)
   + [Clone](#clone)
+  + [ZIP File](#zip-file)
 - [Installation](#installation)
   + [Standard Usage](#standard-usage)
+  + [Transfer](#transfer)
+- [Riding the Raptor](#riding-the-raptor)
 - [ToDos](#todos)
 - [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
 - [Team Members](#team-members)
@@ -44,22 +48,36 @@ git clone git@github.com:SuitAndCape/RAPTORSMACSS.git
 git clone https://github.com/SuitAndCape/RAPTORSMACSS.git
 ```
 
+### ZIP File
+
+- Click the "Download ZIP" button to do just that
+
 ## Installation
 
 ### Standard Usage
-1. Place `public/` directory in the root of your project
-2. Link your HTML file (eg. `index.html`) to the `raptor.min.css` file
+1. Rename the `RAPTORSMACSS/` directory so that you may use it as the root of your project
+2. Rename `demo.html` found in the RAPTORSMACSS root directory to whatever you want (eg. `index.html`)
+3. Commence!
+
+### Transfer
+1. Create a new project directory
+2. Take the `public/` directory from the `RAPTORSMACSS/` directory, and place it in the root of your project
+3. Link your HTML file (eg. `index.html`) to the `raptor.min.css` file
 
 ``` html
 <!-- EXAMPLE -->
 <link rel="stylesheet" type="text/css" href="public/css/raptor.min.css" />
 ```
 
-3. Change to your project's directory, and run the following command:
+## Riding the Raptor
+
+- Before making any modifications to the SCSS, change to the root directory of your project, and run the following command:
 
 ``` sh
 sass --watch public/scss/raptor.scss:public/css/raptor.min.css --style compressed
 ```
+
+**_NOTE:_** The command above assumes that you went with one of the two recommended [installation](#installation) strategies suggested above, and have the necessary [requirements](#requirements).
 
 ## ToDos
 

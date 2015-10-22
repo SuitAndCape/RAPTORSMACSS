@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- demo.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,9 +6,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>RAPTORSMACSS | SuitAndCape | v1.0.1</title>
+  <title>RAPTORSMACSS | SuitAndCape | v1.1.0</title>
   <meta name="author" content="Ali Esmaili" />
-  <meta name="keywords" content="HTML, CSS, SCSS, Sass, SMACSS, JavaScript, SuitAndCape" />
+  <meta name="keywords" content="RAPTORSMACSS, SCSS, Sass, SMACSS, BEM, CSS, CSS3, HTML, HTML5, JavaScript, SuitAndCape" />
   <meta name="description" content="Here, we have a demo page for RAPTORSMACSS">
   <meta name="theme-color" content="#FFFFFF" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -17,6 +17,50 @@
 </head>
 
 <body>
+  <header class="banner tupperware">
+    <h1 class="banner__demo-headline">Title Header</h1>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="/">Link</a>
+        </li>
+        <li>
+          <a href="/">Link</a>
+        </li>
+        <li>
+          <a href="/">Link</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container row">
+    <header class="banner__demo row">Header</header>
+
+    <main class="principal__demo gutter row">
+      <aside class="sidebar__demo column span-3">Aside</aside>
+
+      <article class="composition__demo column span-9">Article</article>
+    </main>
+
+    <div class="row">
+      <section class="home-page__demo">Section</section>
+    </div>
+
+    <div class="home-page__demo gutter row">
+      <section class="home-page__demo--subsection column span-4">A</section>
+
+      <section class="home-page__demo--subsection column span-2">B</section>
+
+      <section class="home-page__demo--subsection column span-5">C</section>
+
+      <section class="home-page__demo--subsection column span-1">D</section>
+    </div>
+
+    <footer class="root__demo row">Footer</footer>
+  </div>
+
   <script type="text/javascript" src="public/js/main.js"></script>
+  <script type="text/javascript" src="public/js/raptor.js"></script>
 </body>
 </html>
