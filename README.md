@@ -3,10 +3,8 @@
 RAPTORSMACSS
 ==========================================================================
 
-**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a Sass (SCSS) boilerplate, loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern.
-The naming convention is [BEM](https://en.bem.info/method/definitions/) based at its roots, but implemented in a way that the user can use whichever naming convention they prefer.
-
-## Version 1.1.0
+**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a highly modular Sass (SCSS) boilerplate.  It is loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern, but I took some design liberties along the way.  I plan on writing a clear guide about the differences between SMACSS and RAPTORSMACSS.
+The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming convention is only implemented at RAPTORSMACSS' roots, so the user can use whichever naming convention they prefer.
 
 ## Contents
 
@@ -19,6 +17,9 @@ The naming convention is [BEM](https://en.bem.info/method/definitions/) based at
   + [Standard Usage](#standard-usage)
   + [Transfer](#transfer)
 - [Riding the Raptor](#riding-the-raptor)
+  + [Sass Watch](#sass-watch)
+  + [Gulp Watch](#gulp-watch)
+    * [Gulp Requirements](#gulp-requirements)
 - [ToDos](#todos)
 - [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
 - [Team Members](#team-members)
@@ -34,62 +35,88 @@ The naming convention is [BEM](https://en.bem.info/method/definitions/) based at
 ## Download
 
 ### Clone
-Make a local clone of the RAPTORSMACSS repo.
+Make a local clone of the RAPTORSMACSS repo, with one of the following commands...
 
-- To clone with SSH, use the following command:
+- To clone with SSH:
 
 ``` sh
 git clone git@github.com:SuitAndCape/RAPTORSMACSS.git
 ```
 
-- To clone with HTTPS, use the following command:
+- To clone with HTTPS:
 
 ``` sh
 git clone https://github.com/SuitAndCape/RAPTORSMACSS.git
 ```
 
 ### ZIP File
-
-- Click the "Download ZIP" button to do just that
+Click the "Download ZIP" button to do just that.
 
 ## Installation
 
 ### Standard Usage
-1. Rename the `RAPTORSMACSS/` directory so that you may use it as the root of your project
-2. Rename `demo.html` found in the RAPTORSMACSS root directory to whatever you want (eg. `index.html`)
-3. Commence!
+1. Rename the `RAPTORSMACSS/` directory
+2. Use this directory as the root of your project
+3. Raptor away!
 
 ### Transfer
 1. Create a new project directory
-2. Take the `public/` directory from the `RAPTORSMACSS/` directory, and place it in the root of your project
-3. Link your HTML file (eg. `index.html`) to the `raptor.min.css` file
+2. Take the `public/` and `source/` directories from the `RAPTORSMACSS/` directory, and place them in the root of your project
+3. Link your HTML file (eg. `index.html`) to the `raptor.min.css` stylesheet
 
 ``` html
 <!-- EXAMPLE -->
-<link rel="stylesheet" type="text/css" href="public/css/raptor.min.css" />
+<link rel="stylesheet" type="text/css" href="public/assets/stylesheets/raptor.min.css" />
 ```
+4. Commence Raptoring!
 
 ## Riding the Raptor
 
-- Before making any modifications to the SCSS, change to the root directory of your project, and run the following command:
+**_NOTE:_** The commands below assume that you went with one of the two recommended [installation](#installation) strategies suggested above, and have the necessary [requirements](#requirements).
+
+### Sass Watch
+Before making any modifications to the SCSS files, change to the root directory of your project, and run one of the following commands...
+
+- To compile minified CSS:
 
 ``` sh
-sass --watch public/scss/raptor.scss:public/css/raptor.min.css --style compressed
+sass --watch source/scss/raptor.scss:public/assets/stylesheets/raptor.min.css --style compressed
 ```
 
-**_NOTE:_** The command above assumes that you went with one of the two recommended [installation](#installation) strategies suggested above, and have the necessary [requirements](#requirements).
+- To compile standard CSS:
+
+``` sh
+sass --watch source/scss/raptor.scss:public/assets/stylesheets/raptor.css
+```
+
+### Gulp Watch
+For [Gulp](http://gulpjs.com/) enthusiasts, an optional `gulpfile.js` file has been included.  This file should be in the root directory of your project.
+Before making any modifications to the SCSS or JavaScript files, change to any directory in your project (preferably the root), and run the following command...
+
+- To have Gulp compile minified CSS and JavaScripts, standard CSS and JavaScripts, minified CSS sourcemaps, and standard CSS and JavaScript sourcemaps:
+
+``` sh
+gulp
+```
+
+#### Gulp Requirements
+These are the requirements to use the `gulpfile.js` file, as is...
+
+- [npm](https://docs.npmjs.com/getting-started/what-is-npm)
+- [gulp](https://github.com/gulpjs/gulp)
+- [gulp-concat](https://github.com/contra/gulp-concat)
+- [gulp-minify-css](https://github.com/murphydanger/gulp-minify-css)
+- [gulp-rename](https://github.com/hparra/gulp-rename)
+- [gulp-sass](https://github.com/dlmanning/gulp-sass)
+- [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
+- [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
+- [gulp-util](https://github.com/gulpjs/gulp-util)
 
 ## ToDos
 
-- Add instructional `README.md` files to each directory found in `public/scss/`
-- Make it easy to install and use for Rails projects
-  + Write an easy installation guide for Rails projects usage on repo `README.md` file
-- Make it easy to install and use for Django projects
-  + Write an easy installation guide for Django projects usage on repo `README.md` file
-- Add more comments explaining what things do
-- Write thorough documentation explaining how to use everything
+- Add instructional `.md` file(s)
 - Include logo, when developed
-- Include `rapticon-16x16.png` favicon when developed
+- Update `rapticon-16x16.png` and `rapticon-16x16.ico` favicons, when developed
 
 --------------------------------------------------------------------------
 

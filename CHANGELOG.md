@@ -3,6 +3,16 @@
 RAPTORSMACSS Changelog
 ==========================================================================
 
+## 1.1.1
+- Modularize
+  + `public/assets/**/*` directories
+  + `source/**/*` directories
+- Lighten
+  + Remove demo code
+  + Remove much unnecessary code
+  + Include (commented) example code in empty directories
+  + Add optional `gulpfile.js` file
+
 ## 1.1.0
 - Initial public release
 

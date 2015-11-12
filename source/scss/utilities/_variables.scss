@@ -1,0 +1,94 @@
+// _variables.scss
+
+////= Global Variable Assignments
+//======================================================================//
+
+//== Foundation Assignments =============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 16px !default; // _foundation => html {font-size}
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 20px !default; // _foundation => body {font}
+
+/// Body features
+$core__body--line-height: 1 !default; // _foundation => body {font}
+$core__body--font-stack: $font-stack--open-sans; // _foundation => body {font}
+$core__body--text-color: $cod-gray; // _foundation => body {color}
+$core__body--background-color: $gallery; // _foundation => body {background}
+
+//== Asset Path Assignments =============================================/
+
+/// Glyph paths
+$font: $path__glyph + '/fonts'; // _glpyhs => @font-face {src}
+$icon: $path__glyph + '/icons'; // _glpyhs => @font-face {src}
+
+/// Image paths
+$bg-img: $path__img + '/backgrounds';
+$logo: $path__img + '/logos';
+
+/// JavaScript paths
+$vend-js: $path__js + '/vendors';
+
+//== Glyph Stack Assignments ============================================/
+
+/// Main fonts
+$primary-font: $font-stack--aleo;
+$secondary-font: $font-stack--hoefler-text;
+$tertiary-font: $font-stack--lucida-sans-type;
+
+/// Font usage
+$code-font: $font-stack--courier-new; // _typography => code {font-family}
+
+/// Icon usage
+
+//== Descriptive Color Assignments ======================================/
+
+/// Main colors
+$primary-color: $blue;
+$secondary-color: $green;
+$tertiary-color: $purple;
+$shadow-color: rgba($black, .18);
+
+/// Color usage
+$hover-color: $red; // _typography => a,i {&:hover {color}}
+$link-color: $pacific-blue; // _typography => a {color}
+
+//== Numeric Value Assignments ==========================================/
+
+/// Main font sizes
+$font-size: $core__body--font-size; // _typography => h5,p {font-size}
+$subp-font-size: 70%; // _typography => sub,sup {font-size}
+
+/// Font size usage
+$lg-font-size: 110%;
+
+/// Border radii
+$round-radius: 50%;
+
+/// Transition durations
+$main-trans: .3s;
+
+/// Font emphasis
+$heavy: 900;
+$ultra-bold: 800;
+$bold: 700;
+$demi-bold: 600;
+$medium: 500;
+$normal: 400;
+$light: 300;
+$ultra-light: 200;
+$thin: 100;
+
+//== Assigned Color Maps ================================================/
+
+$ui-map: (
+  'error': $monza,
+  'info': $studio,
+  'missing': $sun-glow,
+  'notice': $brown,
+  'success': $jungle-green,
+  'warning': $tango
+);

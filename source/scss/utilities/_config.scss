@@ -1,0 +1,83 @@
+// _config.scss
+
+////= Global Configuration
+//======================================================================//
+
+//== Asset Paths ========================================================/
+
+$path__glyph: '../glyphs' !default;
+$path__img: '../images' !default;
+$path__js: '../javascripts' !default;
+
+//== Glyph Stacks =======================================================/
+
+/// Sans-serif font stacks
+$font-stack--open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-stack--futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
+
+/// Serif font stacks
+$font-stack--garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
+$font-stack--hoefler-text: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif !default;
+
+/// Monospace font stacks
+$font-stack--courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-stack--lucida-sans-type: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace !default;
+
+/// Variant and custom font stacks
+
+/// Icon stacks
+
+//== Descriptive Colors =================================================/
+
+/// Standard colors
+$clear: transparent !default;
+$white: #FFFFFF !default;
+$silver: #C0C0C0 !default;
+$grey: #808080 !default;
+$black: #000000 !default;
+$red: #FF0000 !default;
+$brown: #A52A2A !default;
+$yellow: #FFFF00 !default;
+$orange: #FFA500 !default;
+$green: #008000 !default;
+$blue: #0000FF !default;
+$purple: #800080 !default;
+
+/// Variant and custom colors
+$gallery: #EFEFEF !default;
+$cod-gray: #0B0B0B !default;
+$monza: #C7031E !default;
+$sun-glow: #FFCC33 !default;
+$tango: #ED7A1C !default;
+$jungle-green: #29AB87 !default;
+$pacific-blue: #009DC4 !default;
+$studio: #714AB2 !default;
+
+/// RGBa standard colors
+$rgba-red: rgba(255, 0, 0, 0) !default;
+$rgba-brown: rgba(165, 42, 42, 0) !default;
+$rgba-yellow: rgba(255, 255, 0, 0) !default;
+$rgba-orange: rgba(255, 165, 0, 0) !default;
+$rgba-green: rgba(0, 128, 0, 0) !default;
+$rgba-blue: rgba(0, 0, 255, 0) !default;
+$rgba-purple: rgba(128, 0, 128, 0) !default;
+
+/// RGBa variant and custom  colors
+$rgba-gallery: rgba(239, 239, 239, 0) !default;
+$rgba-cod-gray: rgba(11, 11, 11, 0) !default;
+
+//== Configuration Maps =================================================/
+
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxl': (min-width: 1920px),
+  'xxl': (min-width: 1440px),
+  'xl': (min-width: 1200px),
+  'lg': (min-width: 1024px),
+  'md': (min-width: 992px),
+  'sm': (min-width: 768px),
+  'xs': (min-width: 640px),
+  'xxs': (min-width: 480px),
+  'xxxs': (min-width: 320px)
+) !default;
