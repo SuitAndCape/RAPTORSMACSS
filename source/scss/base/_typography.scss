@@ -5,9 +5,7 @@
 
 a,
 i {
-  &:hover {
-    color: $hover-color;
-  }
+  @extend .link-hover;
 }
 
 a {

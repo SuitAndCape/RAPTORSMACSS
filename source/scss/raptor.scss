@@ -6,34 +6,91 @@
   /// Copyright (c) 2015-2016 Ali Esmaili | SuitAndCape
   /// MIT: https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/LICENSE
 
-////= RAPTORSMACSS Main Manifest
+////= RAPTORSMACSS Master Manifest
 //======================================================================//
 
 @charset 'UTF-8';
 
-/// Import vendor dependencies
-@import 'vendors/index';
+//== Vendor Dependencies ================================================/
 
-/// Import vendor overrides
-@import 'vendor-overrides/index';
+/// Import normalize.css HTML5 display definitions
+@import 'vendors/normalize-h5dd';
 
-/// Import project tools
-@import 'utilities/index';
+//== Project Tools ======================================================/
 
-/// Import project tools
-@import 'extends/index';
+/// Import global configuration
+@import 'utilities/config';
 
-/// Import project groundwork
-@import 'base/index';
+/// Import global variable assignments
+@import 'utilities/variables';
 
-/// Import project structure
-@import 'layout/index';
+/// Import functions
+@import 'utilities/functions';
 
-/// Import project components
-@import 'modules/index';
+/// Import mixins
+@import 'utilities/mixins';
 
-/// Import page-specific styles
-@import 'pages/index';
+//== Reusable Properties ================================================/
 
-/// Import project theme styles
-@import 'themes/index';
+/// Import helper classes and placeholders
+@import 'extends/helpers';
+
+/// Import state classes and placeholders
+@import 'extends/states';
+
+/// Import animation/transition classes and placeholders
+@import 'extends/animations';
+
+//== Project Groundwork =================================================/
+
+/// Import html and body styling
+@import 'base/foundation';
+
+/// Import base styling
+@import 'base/base';
+
+/// Import additional fonts and icons
+@import 'base/glyphs';
+
+/// Import typographic styling
+@import 'base/typography';
+
+//== Project Structure ==================================================/
+
+/// Import header/banner styling
+@import 'layout/header-banner';
+
+/// Import footer/root styling
+@import 'layout/footer-root';
+
+/// Import primary content styling
+@import 'layout/main-principal';
+
+/// Import subsection content styling
+@import 'layout/article-composition';
+
+/// Import complimentary content styling
+@import 'layout/aside-sidebar';
+
+/// Import navigation styling
+@import 'layout/nav-navigation';
+
+//== Project Components =================================================/
+
+/// Import image components
+@import 'modules/images';
+
+//== Page-Specific Styles ===============================================/
+
+/// Import home page styling
+@import 'pages/home-page';
+
+//== Theme Styles =======================================================/
+
+/// Import default theme styling
+@import 'themes/default';
+
+//== Shame Files ========================================================/
+
+/// Import emergency code that does not make you proud
+@import 'shame/shame';

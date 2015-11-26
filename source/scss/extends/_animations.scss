@@ -1,5 +1,33 @@
 // _animations.scss
 
-////= Animation Classes and Placeholders
+////= Animation/Transition Classes and Placeholders
 //======================================================================//
 
+//== Emphasizers ========================================================/
+
+.presence,
+%presence {
+  color: $presence-color;
+
+  &-blink {
+    @extend .presence;
+    animation: blink 1s steps(1, end) infinite;
+  }
+
+  &-pulse {
+    @extend .presence;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulse {
+    50% {
+      opacity: 0;
+    }
+  }
+}

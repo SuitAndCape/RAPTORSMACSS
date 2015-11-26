@@ -41,4 +41,5 @@
   Last update: 2015/11/12
   Language: English
   Components: Sass, CSS3, HTML5, Normalize.css (sorta)
-  Development tools: Sublime Text 3, iTerm2, scss-lint, SublimeLinter, Google Chrome
+  Development tools: Sublime Text 3, iTerm2, scss-lint, SublimeLinter,
+    Google Chrome

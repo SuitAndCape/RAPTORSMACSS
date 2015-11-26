@@ -10,9 +10,6 @@ The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming c
 
 - [Title](#raptorsmacss)
 - [Requirements](#requirements)
-- [Download](#download)
-  + [Clone](#clone)
-  + [ZIP File](#zip-file)
 - [Installation](#installation)
   + [Standard Usage](#standard-usage)
   + [Transfer](#transfer)
@@ -30,27 +27,7 @@ The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming c
 ## Requirements
 
 - [Ruby](https://www.ruby-lang.org/en/) 1.8.7+
-- [Sass](https://github.com/sass/sass) 3.4+
-
-## Download
-
-### Clone
-Make a local clone of the RAPTORSMACSS repo, with one of the following commands...
-
-- To clone with SSH:
-
-``` sh
-git clone git@github.com:SuitAndCape/RAPTORSMACSS.git
-```
-
-- To clone with HTTPS:
-
-``` sh
-git clone https://github.com/SuitAndCape/RAPTORSMACSS.git
-```
-
-### ZIP File
-Click the "Download ZIP" button to do just that.
+- [Sass](https://github.com/sass/sass) 3.4.0+
 
 ## Installation
 
@@ -102,21 +79,22 @@ gulp
 #### Gulp Requirements
 These are the requirements to use the `gulpfile.js` file, as is...
 
-- [npm](https://docs.npmjs.com/getting-started/what-is-npm)
-- [gulp](https://github.com/gulpjs/gulp)
-- [gulp-concat](https://github.com/contra/gulp-concat)
-- [gulp-minify-css](https://github.com/murphydanger/gulp-minify-css)
-- [gulp-rename](https://github.com/hparra/gulp-rename)
-- [gulp-sass](https://github.com/dlmanning/gulp-sass)
-- [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
-- [gulp-uglify](https://github.com/terinjokes/gulp-uglify)
-- [gulp-util](https://github.com/gulpjs/gulp-util)
+- [NPM](https://docs.npmjs.com/getting-started/what-is-npm) 3.0.0+
+- [Gulp](https://github.com/gulpjs/gulp) 3.9.0
+- [Gulp-Concat](https://github.com/contra/gulp-concat) 2.6.0
+- [Gulp-Minify-CSS](https://github.com/murphydanger/gulp-minify-css) 1.2.1
+- [Gulp-Rename](https://github.com/hparra/gulp-rename) 1.2.2
+- [Gulp-Sass](https://github.com/dlmanning/gulp-sass) 2.1.0
+- [Gulp-Sourcemaps](https://github.com/floridoo/gulp-sourcemaps) 1.6.0
+- [Gulp-Uglify](https://github.com/terinjokes/gulp-uglify)
+- [Gulp-Util](https://github.com/gulpjs/gulp-util) 3.0.7
 
 ## ToDos
 
-- Add instructional `.md` file(s)
+- Write thorough documentation or instructional `.md` file(s) explaining how to use everything
 - Include logo, when developed
 - Update `rapticon-16x16.png` and `rapticon-16x16.ico` favicons, when developed
+- Create [FunkyAnimatronicMoccasinHenchmen](https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen) tie-in repo
 
 --------------------------------------------------------------------------
 

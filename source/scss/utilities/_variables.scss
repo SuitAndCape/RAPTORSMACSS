@@ -11,7 +11,7 @@ $core__html--font-size: 16px !default; // _foundation => html {font-size}
 
 /// Body font-size
 /// Used with @pxem function
-$core__body--font-size: 20px !default; // _foundation => body {font}
+$core__body--font-size: 18px !default; // _foundation => body {font}
 
 /// Body features
 $core__body--line-height: 1 !default; // _foundation => body {font}
@@ -34,33 +34,27 @@ $vend-js: $path__js + '/vendors';
 
 //== Glyph Stack Assignments ============================================/
 
-/// Main fonts
-$primary-font: $font-stack--aleo;
+/// Font usage
+$primary-font: $font-stack--open-sans;
 $secondary-font: $font-stack--hoefler-text;
 $tertiary-font: $font-stack--lucida-sans-type;
 
-/// Font usage
-$code-font: $font-stack--courier-new; // _typography => code {font-family}
-
-/// Icon usage
-
 //== Descriptive Color Assignments ======================================/
 
-/// Main colors
+/// Color usage
 $primary-color: $blue;
 $secondary-color: $green;
 $tertiary-color: $purple;
 $shadow-color: rgba($black, .18);
 
-/// Color usage
-$hover-color: $red; // _typography => a,i {&:hover {color}}
-$link-color: $pacific-blue; // _typography => a {color}
+//== Assigned Color Maps ================================================/
+
+$ui-map: (
+  'error': $monza,
+  'success': $jungle-green
+);
 
 //== Numeric Value Assignments ==========================================/
-
-/// Main font sizes
-$font-size: $core__body--font-size; // _typography => h5,p {font-size}
-$subp-font-size: 70%; // _typography => sub,sup {font-size}
 
 /// Font size usage
 $lg-font-size: 110%;
@@ -82,13 +76,24 @@ $light: 300;
 $ultra-light: 200;
 $thin: 100;
 
-//== Assigned Color Maps ================================================/
+//== States Variables ===================================================/
 
-$ui-map: (
-  'error': $monza,
-  'info': $studio,
-  'missing': $sun-glow,
-  'notice': $brown,
-  'success': $jungle-green,
-  'warning': $tango
-);
+$hover-color: $red; // => .link-hover ===> _typography => a,i {color}
+
+//== Animations Variables ===============================================/
+
+$presence-color: $studio; // => .presence {color}
+
+//== Typography Variables ===============================================/
+
+/// Typographic fonts
+$code-font: $font-stack--courier-new; // => code {font-family}
+
+/// Typographic icons
+
+/// Typographic colors
+$link-color: $pacific-blue; // => a {color}
+
+/// Typographic font sizes
+$font-size: $core__body--font-size; // => h5,p {font-size}
+$subp-font-size: 70%; // => sub,sup {font-size}

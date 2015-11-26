@@ -1,14 +1,16 @@
+// gulpfile.js
+
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    minifyCss = require('gulp-minify-css'),
+    minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglifyJs = require('gulp-uglify'),
+    uglifyJS = require('gulp-uglify'),
     gutil = require('gulp-util'),
 
     chalk = gutil.colors,
-    dest = gulp.dest,
+    destination = gulp.dest,
     greenChalk = chalk.green,
     highlightChalk = chalk.underline.cyan.bgMagenta,
     log = gutil.log,
@@ -32,13 +34,13 @@ gulp.task('raptor-css', function() {
       .pipe(sass({
         style: 'expanded'
       }))
-      .pipe(dest(output.stylesheets))
+      .pipe(destination(output.stylesheets))
       .pipe(rename({
         suffix: '.min'
       }))
-      .pipe(minifyCss())
+      .pipe(minifyCSS())
     .pipe(sourcemaps.write('./'))
-    .pipe(dest(output.stylesheets));
+    .pipe(destination(output.stylesheets));
 });
 
 gulp.task('raptor-js', function() {
@@ -46,13 +48,13 @@ gulp.task('raptor-js', function() {
   return gulp.src([input.vendorjs, input.js])
     .pipe(sourcemaps.init())
       .pipe(concat('raptor.js'))
-      .pipe(dest(output.javascripts))
+      .pipe(destination(output.javascripts))
       .pipe(rename({
         suffix: '.min'
       }))
-      .pipe(uglifyJs())
+      .pipe(uglifyJS())
     .pipe(sourcemaps.write('./'))
-    .pipe(dest(output.javascripts));
+    .pipe(destination(output.javascripts));
 });
 
 gulp.task('watch', function() {

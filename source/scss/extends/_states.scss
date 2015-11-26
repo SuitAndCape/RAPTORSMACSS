@@ -3,3 +3,8 @@
 ////= State Classes and Placeholders
 //======================================================================//
 
+.link-hover {
+  &:hover {
+    color: $hover-color;
+  }
+}
