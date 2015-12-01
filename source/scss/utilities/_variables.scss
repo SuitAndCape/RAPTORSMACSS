@@ -3,22 +3,6 @@
 ////= Global Variable Assignments
 //======================================================================//
 
-//== Foundation Assignments =============================================/
-
-/// HTML font-size
-/// Used with @pxrem function
-$core__html--font-size: 16px !default; // _foundation => html {font-size}
-
-/// Body font-size
-/// Used with @pxem function
-$core__body--font-size: 18px !default; // _foundation => body {font}
-
-/// Body features
-$core__body--line-height: 1 !default; // _foundation => body {font}
-$core__body--font-stack: $font-stack--open-sans; // _foundation => body {font}
-$core__body--text-color: $cod-gray; // _foundation => body {color}
-$core__body--background-color: $gallery; // _foundation => body {background}
-
 //== Asset Path Assignments =============================================/
 
 /// Glyph paths
@@ -47,7 +31,7 @@ $secondary-color: $green;
 $tertiary-color: $purple;
 $shadow-color: rgba($black, .18);
 
-//== Assigned Color Maps ================================================/
+//== Color Map Assignments ==============================================/
 
 $ui-map: (
   'error': $monza,
@@ -78,11 +62,29 @@ $thin: 100;
 
 //== States Variables ===================================================/
 
+/// Hover state
 $hover-color: $red; // => .link-hover ===> _typography => a,i {color}
 
 //== Animations Variables ===============================================/
 
+/// Presence
 $presence-color: $studio; // => .presence {color}
+
+//== Foundation Variables ===============================================/
+
+/// HTML font-size
+/// Used with @pxrem function
+$core__html--font-size: 16px !default; // => html {font-size}
+
+/// Body font-size
+/// Used with @pxem function
+$core__body--font-size: 18px !default; // => body {font}
+
+/// Body features
+$core__body--background-color: $gallery !default; // => body {background}
+$core__body--font-stack: $font-stack--open-sans !default; // => body {font}
+$core__body--line-height: 1 !default; // => body {font}
+$core__body--text-color: $cod-gray !default; // => body {color}
 
 //== Typography Variables ===============================================/
 

@@ -94,7 +94,7 @@ These are the requirements to use the `gulpfile.js` file, as is...
 - Write thorough documentation or instructional `.md` file(s) explaining how to use everything
 - Include logo, when developed
 - Update `rapticon-16x16.png` and `rapticon-16x16.ico` favicons, when developed
-- Create [FunkyAnimatronicMoccasinHenchmen](https://github.com/SuitAndCape/FunkyAnimatronicMoccasinHenchmen) tie-in repo
+- Create [FunkyAnimatronicMixologyHenchmen](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen) tie-in repo
 
 --------------------------------------------------------------------------
 

@@ -3,6 +3,10 @@
 RAPTORSMACSS Changelog
 ==========================================================================
 
+## 1.1.2
+- Remove sub-manifests
+- Reorder tools
+
 ## 1.1.1
 - Modularize
   + `public/assets/**/*` directories
