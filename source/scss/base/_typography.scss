@@ -1,16 +1,20 @@
 // _typography.scss
 
-////= Typographic Styling
+////= Typographic Setup
 //======================================================================//
 
 a,
 i {
-  @extend .link-hover;
+  @extend .link-is-hover;
 }
 
 a {
   color: $link-color;
   text-decoration: none;
+}
+
+article {
+  font-family: $composition-font;
 }
 
 b,
@@ -37,7 +41,7 @@ p {
 }
 
 p {
-  font-size: pxem($font-size);
+  font-size: pxem($main-font-size);
 }
 
 sub,

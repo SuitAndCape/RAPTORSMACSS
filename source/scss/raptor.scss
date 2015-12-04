@@ -16,7 +16,7 @@
 /// Import normalize.css HTML5 display definitions
 @import 'vendors/normalize-h5dd';
 
-//== Project Tools ======================================================/
+//== Universal Tools ====================================================/
 
 /// Import global configuration
 @import 'utilities/config';
@@ -30,7 +30,7 @@
 /// Import mixins
 @import 'utilities/mixins';
 
-//== Reusable Properties ================================================/
+//== Pragmatic Properties ===============================================/
 
 /// Import helper classes and placeholders
 @import 'extends/helpers';
@@ -43,16 +43,13 @@
 
 //== Project Groundwork =================================================/
 
-/// Import html and body styling
-@import 'base/foundation';
-
-/// Import base styling
-@import 'base/base';
+/// Import core setup
+@import 'base/core';
 
 /// Import additional fonts and icons
 @import 'base/glyphs';
 
-/// Import typographic styling
+/// Import typographic setup
 @import 'base/typography';
 
 //== Project Structure ==================================================/

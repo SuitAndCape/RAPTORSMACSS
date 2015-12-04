@@ -54,7 +54,7 @@ template {
   padding-right: 1.22222em;
   width: 100%; }
 
-.link-hover:hover, a:hover,
+.link-is-hover:hover, a:hover,
 i:hover {
   color: #FF0000; }
 
@@ -89,12 +89,13 @@ html {
 body {
   background: #EFEFEF;
   color: #0B0B0B;
-  font: 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font: 18px Futura, "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin: 0; }
 
 a,
 button {
-  color: inherit; }
+  color: inherit;
+  transition: 0.2s; }
 
 a {
   background-color: transparent;
@@ -164,6 +165,9 @@ sub {
 a {
   color: #009DC4;
   text-decoration: none; }
+
+article {
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 b,
 strong {

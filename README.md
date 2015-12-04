@@ -3,7 +3,7 @@
 RAPTORSMACSS
 ==========================================================================
 
-**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a highly modular Sass (SCSS) boilerplate.  It is loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern, but I took some design liberties along the way.  I plan on writing a clear guide about the differences between SMACSS and RAPTORSMACSS.
+**R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a highly modular and organized Sass (SCSS) boilerplate.  It is loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern, with some layout liberties taken.
 The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming convention is only implemented at RAPTORSMACSS' roots, so the user can use whichever naming convention they prefer.
 
 ## Contents

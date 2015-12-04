@@ -3,11 +3,41 @@
 ////= Global Variable Assignments
 //======================================================================//
 
-//== Asset Path Assignments =============================================/
+//== Base Variables =====================================================/
 
-/// Glyph paths
-$font: $path__glyph + '/fonts'; // _glpyhs => @font-face {src}
-$icon: $path__glyph + '/icons'; // _glpyhs => @font-face {src}
+/// Glyphs – Font and icon paths
+$font-path: $path__glyph + '/fonts' !default; // => @font-face {src}
+$icon-path: $path__glyph + '/icons' !default; // => @font-face {src}
+
+/// Core – HTML font-size
+/// Used with @pxrem function
+$html-font-size: 16px !default; // => html {font-size}
+
+/// Core – Body font-size
+/// Used with @pxem function
+$body-font-size: 18px !default; // => body {font}
+
+/// Core – Body features
+$body-font: $font-stack--futura !default; // => body {font}
+$body-bg-color: $gallery !default; // => body {background}
+$body-line-height: 1 !default; // => body {font}
+$body-color: $cod-gray !default; // => body {color}
+
+/// Core – Link and button features
+$a-button-transition: .2s !default; // => a,button {transition}
+
+/// Typography – Typographic glyph stacks
+$code-font: $font-stack--courier-new !default; // => code {font-family}
+$composition-font: $font-stack--open-sans !default; // => article {font-family}
+
+/// Typography – Typographic colors
+$link-color: $pacific-blue !default; // => a {color}
+
+/// Typography – Typographic font sizes
+$main-font-size: $body-font-size !default; // => h5,p {font-size}
+$subp-font-size: 70% !default; // => sub,sup {font-size}
+
+//== Asset Path Assignments =============================================/
 
 /// Image paths
 $bg-img: $path__img + '/backgrounds';
@@ -19,7 +49,7 @@ $vend-js: $path__js + '/vendors';
 //== Glyph Stack Assignments ============================================/
 
 /// Font usage
-$primary-font: $font-stack--open-sans;
+$primary-font: $font-stack--garamond;
 $secondary-font: $font-stack--hoefler-text;
 $tertiary-font: $font-stack--lucida-sans-type;
 
@@ -29,7 +59,7 @@ $tertiary-font: $font-stack--lucida-sans-type;
 $primary-color: $blue;
 $secondary-color: $green;
 $tertiary-color: $purple;
-$shadow-color: rgba($black, .18);
+$shadow-color: rgba($black, 1);
 
 //== Color Map Assignments ==============================================/
 
@@ -47,7 +77,7 @@ $lg-font-size: 110%;
 $round-radius: 50%;
 
 /// Transition durations
-$main-trans: .3s;
+$primary-trans: .3s;
 
 /// Font emphasis
 $heavy: 900;
@@ -63,39 +93,9 @@ $thin: 100;
 //== States Variables ===================================================/
 
 /// Hover state
-$hover-color: $red; // => .link-hover ===> _typography => a,i {color}
+$hover-color: $red; // => .link-is-hover {color} ==> _typography => a,i
 
 //== Animations Variables ===============================================/
 
 /// Presence
 $presence-color: $studio; // => .presence {color}
-
-//== Foundation Variables ===============================================/
-
-/// HTML font-size
-/// Used with @pxrem function
-$core__html--font-size: 16px !default; // => html {font-size}
-
-/// Body font-size
-/// Used with @pxem function
-$core__body--font-size: 18px !default; // => body {font}
-
-/// Body features
-$core__body--background-color: $gallery !default; // => body {background}
-$core__body--font-stack: $font-stack--open-sans !default; // => body {font}
-$core__body--line-height: 1 !default; // => body {font}
-$core__body--text-color: $cod-gray !default; // => body {color}
-
-//== Typography Variables ===============================================/
-
-/// Typographic fonts
-$code-font: $font-stack--courier-new; // => code {font-family}
-
-/// Typographic icons
-
-/// Typographic colors
-$link-color: $pacific-blue; // => a {color}
-
-/// Typographic font sizes
-$font-size: $core__body--font-size; // => h5,p {font-size}
-$subp-font-size: 70%; // => sub,sup {font-size}
