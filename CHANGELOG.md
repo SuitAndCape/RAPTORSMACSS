@@ -4,10 +4,12 @@ RAPTORSMACSS Changelog
 ==========================================================================
 
 ## 1.1.2
+
 - Remove sub-manifests
 - Reorder tools
 
 ## 1.1.1
+
 - Modularize
   + `public/assets/**/*` directories
   + `source/**/*` directories
@@ -18,10 +20,13 @@ RAPTORSMACSS Changelog
   + Add optional `gulpfile.js` file
 
 ## 1.1.0
+
 - Initial public release
 
 ## 1.0.2
+
 - Soft release improvements
 
 ## 1.0.1
+
 - Initial soft release
