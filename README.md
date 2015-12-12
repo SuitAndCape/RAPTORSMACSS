@@ -32,20 +32,21 @@ The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming c
 ## Installation
 
 ### Standard Usage
-1. Rename the `RAPTORSMACSS/` directory
+1. Rename the `RAPTORSMACSS/public/` directory
 2. Use this directory as the root of your project
 3. Raptor away!
 
 ### Transfer
 1. Create a new project directory
-2. Take the `public/` and `source/` directories from the `RAPTORSMACSS/` directory, and place them in the root of your project
-3. Link your HTML file (eg. `index.html`) to the `raptor.min.css` stylesheet
+2. Place the `assets/` and `source/` directories from the `RAPTORSMACSS/public/` directory, into the root directory of your project
+3. Optionally, repeat the previous step with the other files found in the `RAPTORSMACSS/public/` directory
+4. Link your HTML file (eg. `index.html`) to the `raptor.min.css` or `raptor.css` stylesheet
 
 ``` html
 <!-- EXAMPLE -->
-<link rel="stylesheet" type="text/css" href="public/assets/stylesheets/raptor.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/raptor.min.css" />
 ```
-4. Commence Raptoring!
+5. Commence Raptoring!
 
 ## Riding the Raptor
 
@@ -57,17 +58,24 @@ Before making any modifications to the SCSS files, change to the root directory 
 - To compile minified CSS:
 
 ``` sh
-sass --watch source/scss/raptor.scss:public/assets/stylesheets/raptor.min.css --style compressed
+sass --watch source/scss/raptor.scss:assets/stylesheets/raptor.min.css --style compressed
 ```
 
 - To compile standard CSS:
 
 ``` sh
-sass --watch source/scss/raptor.scss:public/assets/stylesheets/raptor.css
+sass --watch source/scss/raptor.scss:assets/stylesheets/raptor.css
 ```
 
 ### Gulp Watch
 For [Gulp](http://gulpjs.com/) enthusiasts, an optional `gulpfile.js` file has been included.  This file should be in the root directory of your project.
+
+- To install the RAPTORSMACSS Gulp setup:
+
+``` sh
+npm install
+```
+
 Before making any modifications to the SCSS or JavaScript files, change to any directory in your project (preferably the root), and run the following command...
 
 - To have Gulp compile minified CSS and JavaScripts, standard CSS and JavaScripts, minified CSS sourcemaps, and standard CSS and JavaScript sourcemaps:
@@ -92,6 +100,11 @@ These are the requirements to use the `gulpfile.js` file, as is...
 ## ToDos
 
 - Write thorough documentation or instructional `.md` file(s) explaining how to use everything
+- Add a method to Uglify without using Gulp
+- Create optional status files
+  + `404.html`
+  + `422.html`
+  + `500.html`
 - Include logo, when developed
 - Update `rapticon-16x16.png` and `rapticon-16x16.ico` favicons, when developed
 - Create [FunkyAnimatronicMixologyHenchmen](https://github.com/SuitAndCape/FunkyAnimatronicMixologyHenchmen) tie-in repo
@@ -100,7 +113,7 @@ These are the requirements to use the `gulpfile.js` file, as is...
 
 ## User Stories, MVP, Specifications, and Pseudocode
 
-To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/SMSP.md).
+To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/RAPTORSMACSS/blob/SMSP/SMSP.md).
 
 ## Team Members:
 
@@ -110,7 +123,7 @@ To see the process that has been documented for this project, [click here](https
 
 ## Humans.txt
 
-[We Are People.  Get to Know Us.](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/humans.txt)
+[The humans responsible and technology colophon](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/humans.txt).
 
 The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
 

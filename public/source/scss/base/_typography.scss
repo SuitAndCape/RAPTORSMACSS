@@ -1,0 +1,45 @@
+// _typography.scss
+
+////= Typographic Setup
+//======================================================================//
+
+a,
+i {
+  &:hover {
+    color: $link-icon-hover-color;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote,
+dfn {
+  font-style: italic;
+}
+
+code {
+  font-family: $code-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: inherit;
+}
+
+sub,
+sup {
+  font-size: $subp-font-size;
+  line-height: 0;
+}

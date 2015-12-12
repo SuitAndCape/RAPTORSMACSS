@@ -1,0 +1,77 @@
+// raptor.scss
+
+/// RAPTORSMACSS v1.1.3
+  /// SOURCE: https://github.com/SuitAndCape/RAPTORSMACSS
+  /// Authored by Ali Esmaili
+  /// Copyright (c) 2015-2016 Ali Esmaili | SuitAndCape
+  /// MIT: https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/LICENSE
+
+////= RAPTORSMACSS Master Manifest
+//======================================================================//
+
+@charset 'UTF-8';
+
+//== Vendor Dependencies ================================================/
+
+/// Import xxxxx
+// @import 'vendors/xxxxx';
+
+//== Universal Tools ====================================================/
+
+/// Import global configuration
+@import 'utilities/config';
+
+/// Import functions
+@import 'utilities/functions';
+
+/// Import mixins
+@import 'utilities/mixins';
+
+//== Pragmatic Properties ===============================================/
+
+/// Import helper classes and placeholders
+@import 'extends/helpers';
+
+/// Import animation/transition classes and placeholders
+@import 'extends/animations';
+
+//== Project Groundwork =================================================/
+
+/// Import additional fonts and icons
+@import 'base/glyphs';
+
+/// Import core setup
+@import 'base/core';
+
+/// Import typographic setup
+@import 'base/typography';
+
+//== Project Structure ==================================================/
+
+/// Import header/banner styling
+@import 'layout/header-banner';
+
+/// Import footer/root styling
+@import 'layout/footer-root';
+
+/// Import primary content styling
+@import 'layout/main-principal';
+
+/// Import subsection content styling
+@import 'layout/article-composition';
+
+/// Import complimentary content styling
+@import 'layout/aside-sidebar';
+
+/// Import navigation styling
+@import 'layout/nav-navigation';
+
+//== Project Components =================================================/
+
+/// Import image components
+@import 'modules/images';
+
+//== Page Specific Styles ===============================================/
+
+/// Import home page styling
+@import 'pages/home-page';

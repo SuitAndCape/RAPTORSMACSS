@@ -3,6 +3,15 @@
 RAPTORSMACSS Changelog
 ==========================================================================
 
+## 1.1.3
+
+- Turn `public/` into the "root" of boilerplate
+- Remove `public/source/scss/utilities/_variables.scss` file
+- Remove `public/source/scss/extends/_states.scss` file
+- Remove `public/source/scss/vendor-overrides/` directory
+- Remove `public/source/scss/themes/` directory
+- Remove `public/source/scss/shame/` directory
+
 ## 1.1.2
 
 - Remove sub-manifests

@@ -3,11 +3,12 @@
 /***= Humans Text File
 ========================================================================*/
 
-  Some information about the people who contributed
+  The humans responsible & technology colophon
 
-/*== Author ============================================================*/
+/*== Team ==============================================================*/
 
-  Developer & Designer: Ali Esmaili
+  Name: Ali Esmaili
+  Role: Developer & Designer
   Email: AESM85@gmail.com
   SuitAndCape GitHub: https://github.com/SuitAndCape
   Personal GitHub: https://github.com/AESM
@@ -19,7 +20,7 @@
 
 /*== Thanks ============================================================*/
 
-  /*===== Development Team =====*/
+  /*===== Support Team =====*/
     Name: Molly Allison-Baker
     Role: Brainstormer and Peer-Reviewer
     Website: http://hermitina.com/
@@ -36,10 +37,10 @@
     Bandcamp: https://ferc.bandcamp.com/
     Location: Southern Bay Area
 
-/*== Site Info =========================================================*/
+/*== Info ==============================================================*/
 
-  Last update: 2015/12/01
-  Language: English
-  Components: Sass, CSS3, HTML5, Normalize.css (sorta)
-  Development tools: Sublime Text 3, iTerm2, scss-lint, SublimeLinter,
+  Last update: 2015/12/11
+  Languages: CSS3, HTML5
+  Components: Sass (SCSS), Gulp.js, scss-lint, tidy-html5
+  Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,
     Google Chrome

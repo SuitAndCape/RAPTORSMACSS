@@ -1,0 +1,100 @@
+// _config.scss
+
+////= Global Configuration
+//======================================================================//
+
+//== Asset Path Assignments =============================================/
+
+$path-glyph: '../glyphs' !default;
+$path-img: '../images' !default;
+$path-js: '../javascripts' !default;
+
+//== Glyph Stack Assignments ============================================/
+
+/// Sans-serif font stacks
+$font-stack-open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+
+/// Serif font stacks
+$font-stack-garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
+
+/// Monospace font stacks
+$font-stack-courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+//== Descriptive Color Assignments ======================================/
+
+/// Standard colors
+$clear: transparent !default;
+$black: #000000 !default;
+$red: #FF0000 !default;
+$blue: #0000FF !default;
+
+/// Variant and custom colors
+$gallery: #EFEFEF !default;
+$cod-gray: #0B0B0B !default;
+$pacific-blue: #009DC4 !default;
+
+//== Reusable Variables =================================================/
+
+/// Color usage
+$primary-color: $red;
+$secondary-color: $pacific-blue;
+$tertiary-color: $blue;
+$shadow-color: rgba($black, 1);
+
+/// Font size usage
+$lg-font-size: 110%;
+
+/// Border radii
+$round-radius: 50%;
+
+/// Transition durations
+$primary-trans: .3s;
+
+//== Base Variables =====================================================/
+
+/// Glyphs – Font and icon paths
+$path-font: $path-glyph + '/fonts'; // => @font-face {src}
+$path-icon: $path-glyph + '/icons'; // => @font-face {src}
+
+/// Core – HTML font-size
+/// Used with @pxrem function
+$html-font-size: 16px; // => html {font-size}
+
+/// Core – Body font-size
+/// Used with @pxem function
+$body-font-size: 18px; // => body {font}
+
+/// Core – Body features
+$body-font: $font-stack-open-sans; // => body {font}
+$body-bg-color: $gallery; // => body {background}
+$body-line-height: 1; // => body {font}
+$body-color: $cod-gray; // => body {color}
+
+/// Core – Link and button features
+$link-button-trans: .2s; // => a,button {transition}
+
+/// Typography – Typographic glyph stacks
+$code-font: $font-stack-courier-new; // => code {font-family}
+
+/// Typography – Typographic colors
+$link-color: $secondary-color; // => a {color}
+$link-icon-hover-color: $tertiary-color; // => a,i {&:hover{color}}
+
+/// Typography – Typographic font sizes
+$subp-font-size: 70%; // => sub,sup {font-size}
+
+//== Configuration Maps =================================================/
+
+/// Breakpoints map
+/// Used with @respond-to mixin
+$breakpoints: (
+  'xxxl': (min-width: 1920px),
+  'xxl': (min-width: 1440px),
+  'xl': (min-width: 1200px),
+  'lg': (min-width: 1024px),
+  'md': (min-width: 992px),
+  'sm': (min-width: 768px),
+  'xs': (min-width: 640px),
+  'xxs': (min-width: 480px),
+  'xxxs': (min-width: 320px)
+);
