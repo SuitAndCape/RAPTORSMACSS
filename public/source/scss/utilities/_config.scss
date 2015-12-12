@@ -18,7 +18,7 @@ $font-stack-open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-ser
 $font-stack-garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
 
 /// Monospace font stacks
-$font-stack-courier-new: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$font-stack-consolas: 'Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 //== Descriptive Color Assignments ======================================/
 
@@ -74,7 +74,7 @@ $body-color: $cod-gray; // => body {color}
 $link-button-trans: .2s; // => a,button {transition}
 
 /// Typography – Typographic glyph stacks
-$code-font: $font-stack-courier-new; // => code {font-family}
+$code-font: $font-stack-consolas; // => code {font-family}
 
 /// Typography – Typographic colors
 $link-color: $secondary-color; // => a {color}
