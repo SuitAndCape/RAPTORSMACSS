@@ -127,6 +127,13 @@ img {
   max-width: 100%;
 }
 
+pre,
+textarea {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+}
+
 sub,
 sup {
   position: relative;

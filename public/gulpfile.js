@@ -10,16 +10,17 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     uglifyJS = require('gulp-uglify'),
-    gutil = require('gulp-util'),
+    gutil = require('gulp-util');
 
-    chalk = gutil.colors,
+var chalk = gutil.colors,
     destination = gulp.dest,
     greenChalk = chalk.green,
-    highlightChalk = chalk.underline.cyan.bgMagenta,
+    redChalk = chalk.red,
+    highlightChalk = chalk.cyan.underline.bgBlue,
     log = gutil.log,
-    timestamp = (new Date()).toString(),
+    timestamp = (new Date()).toString();
 
-    assetsPath = {
+var assetsPath = {
       'stylesheets': './assets/stylesheets',
       'javascripts': './assets/javascripts'
     },
@@ -36,7 +37,7 @@ var gulp = require('gulp'),
 
 //== Functions ==========================================================/
 
-/// Prevents `watch` from breaking because of errors
+/// Errors are reported in terminal and `watch` isn't broken by them
 /// SOURCE: http://stackoverflow.com/a/23973536
 function handleError(error) {
   console.log(error.toString());
@@ -46,11 +47,11 @@ function handleError(error) {
 //== Style Task =========================================================/
 
 gulp.task('raptor-style', function() {
-  log('Generating', highlightChalk('RAPTORSMACSS'), 'based stylesheet at', greenChalk(timestamp));
+  log('Generating', highlightChalk('RAPTORSMACSS'), 'based', redChalk('stylesheet'), 'at', greenChalk(timestamp));
   return gulp.src(sourcePath.scssmanifest)
-  .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass({
-      style: 'expanded'
+      outputStyle: 'expanded'
     }))
     .on('error', handleError)
     .pipe(destination(assetsPath.stylesheets))
@@ -58,14 +59,14 @@ gulp.task('raptor-style', function() {
       suffix: '.min'
     }))
     .pipe(minifyCSS())
-  .pipe(sourcemaps.write('./'))
-  .pipe(destination(assetsPath.stylesheets));
+    .pipe(sourcemaps.write('./'))
+    .pipe(destination(assetsPath.stylesheets));
 });
 
 //== Script Task ========================================================/
 
 gulp.task('raptor-script', function() {
-  log('Generating', highlightChalk('RAPTORSMACSS'), 'based JavaScript file at', greenChalk(timestamp));
+  log('Generating', highlightChalk('RAPTORSMACSS'), 'based', redChalk('JavaScript'), 'file at', greenChalk(timestamp));
   return gulp.src([
     sourcePath.jspoly,
     sourcePath.jslib,
@@ -74,7 +75,7 @@ gulp.task('raptor-script', function() {
     sourcePath.jsview,
     sourcePath.js
   ])
-  .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(concat('raptor.js'))
     .on('error', handleError)
     .pipe(destination(assetsPath.javascripts))
@@ -82,18 +83,18 @@ gulp.task('raptor-script', function() {
       suffix: '.min'
     }))
     .pipe(uglifyJS())
-  .pipe(sourcemaps.write('./'))
-  .pipe(destination(assetsPath.javascripts));
+    .pipe(sourcemaps.write('./'))
+    .pipe(destination(assetsPath.javascripts));
 });
 
 //== Watch and Build Tasks ==============================================/
 
 gulp.task('watch', function() {
-  log('Watching for changes in the', highlightChalk('RAPTORSMACSS'), 'SCSS and JS files...');
+  // log('Watching for changes in the', highlightChalk('RAPTORSMACSS'), redChalk('SCSS'), 'and', redChalk('JS'), 'files...');
   gulp.watch(sourcePath.scss, ['raptor-style']);
   gulp.watch(sourcePath.js, ['raptor-script']);
 });
 
-gulp.task('raptor-build', ['raptor-style', 'raptor-script']);
+gulp.task('build', ['raptor-style', 'raptor-script']);
 
-gulp.task('default', ['raptor-build', 'watch']);
+gulp.task('default', ['watch', 'raptor-style', 'raptor-script']);

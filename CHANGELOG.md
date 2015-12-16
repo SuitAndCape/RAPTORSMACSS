@@ -3,6 +3,10 @@
 RAPTORSMACSS Changelog
 ==========================================================================
 
+## 1.1.4
+
+- Improve optional `gulpfile.js` file
+
 ## 1.1.3
 
 - Turn `public/` into the "root" of boilerplate

@@ -13,6 +13,7 @@ $path-js: '../javascripts' !default;
 
 /// Sans-serif font stacks
 $font-stack-open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$font-stack-futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
 
 /// Serif font stacks
 $font-stack-garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
@@ -20,31 +21,44 @@ $font-stack-garamond: Garamond, Constantia, 'Times New Roman', Times, serif !def
 /// Monospace font stacks
 $font-stack-consolas: 'Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
+/// Variant and custom font stacks
+
+/// Icon stacks
+
 //== Descriptive Color Assignments ======================================/
 
 /// Standard colors
 $clear: transparent !default;
 $black: #000000 !default;
 $red: #FF0000 !default;
+$maroon: #800000 !default;
 $blue: #0000FF !default;
 
 /// Variant and custom colors
 $gallery: #EFEFEF !default;
 $cod-gray: #0B0B0B !default;
+$java: #1FC2C2 !default;
 $pacific-blue: #009DC4 !default;
 
 //== Reusable Variables =================================================/
 
+/// Image paths
+$path-bg-img: $path-img + '/backgrounds';
+
 /// Color usage
 $primary-color: $red;
-$secondary-color: $pacific-blue;
+$secondary-color: $maroon;
 $tertiary-color: $blue;
+$quaternary-color: $pacific-blue;
+$quinary-color: $java;
 $shadow-color: rgba($black, 1);
 
 /// Font size usage
 $lg-font-size: 110%;
+$sm-font-size: 70%;
 
 /// Border radii
+$primary-radius: 4px;
 $round-radius: 50%;
 
 /// Transition durations
@@ -75,26 +89,28 @@ $link-button-trans: .2s; // => a,button {transition}
 
 /// Typography – Typographic glyph stacks
 $code-font: $font-stack-consolas; // => code {font-family}
+$main-heading-font: $font-stack-garamond; // => h1,h2,h3 {font-family}
+$sub-heading-font: $font-stack-futura; // => h4,h5,h6 {font-family}
 
 /// Typography – Typographic colors
-$link-color: $secondary-color; // => a {color}
-$link-icon-hover-color: $tertiary-color; // => a,i {&:hover{color}}
+$link-color: $quaternary-color; // => a {color}
+$link-icon-hover-color: $quinary-color; // => a,i {&:hover{color}}
 
 /// Typography – Typographic font sizes
-$subp-font-size: 70%; // => sub,sup {font-size}
+$subp-font-size: $sm-font-size; // => sub,sup {font-size}
 
 //== Configuration Maps =================================================/
 
 /// Breakpoints map
 /// Used with @respond-to mixin
 $breakpoints: (
-  'xxxl': (min-width: 1920px),
-  'xxl': (min-width: 1440px),
-  'xl': (min-width: 1200px),
-  'lg': (min-width: 1024px),
-  'md': (min-width: 992px),
-  'sm': (min-width: 768px),
-  'xs': (min-width: 640px),
+  'xxxs': (min-width: 320px),
   'xxs': (min-width: 480px),
-  'xxxs': (min-width: 320px)
+  'xs': (min-width: 640px),
+  'sm': (min-width: 768px),
+  'md': (min-width: 992px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1440px),
+  'xxxl': (min-width: 1920px)
 );
