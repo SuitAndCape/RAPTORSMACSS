@@ -4,7 +4,6 @@ RAPTORSMACSS
 ==========================================================================
 
 **R**apid **A**daptive **P**ractical **T**ricked-**O**ut **R**ocket **S****M****A****C****S****S**, or RAPTORSMACSS, is a highly modular and organized Sass (SCSS) boilerplate.  It is loosely inspired by the [SMACSS](https://smacss.com/) architecture pattern, with some layout liberties taken.
-The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming convention is only implemented at RAPTORSMACSS' roots, so the user can use whichever naming convention they prefer.
 
 ## Contents
 
@@ -18,9 +17,7 @@ The Harry Roberts' style [BEM](https://en.bem.info/method/definitions/) naming c
   + [Gulp Watch](#gulp-watch)
     * [Gulp Requirements](#gulp-requirements)
 - [ToDos](#todos)
-- [User Stories, MVP, Specifications, and Pseudocode](#user-stories-mvp-specifications-and-pseudocode)
-- [Team Members](#team-members)
-- [Humans.txt](#humanstxt)
+- [Team](#team)
 - [License](#license)
 - [Connect](#connect)
 
@@ -111,21 +108,13 @@ These are the requirements to use the `gulpfile.js` file, as is...
 
 --------------------------------------------------------------------------
 
-## User Stories, MVP, Specifications, and Pseudocode
+## Team
 
-To see the process that has been documented for this project, [click here](https://github.com/SuitAndCape/RAPTORSMACSS/blob/SMSP/SMSP.md).
-
-## Team Members:
+[The humans responsible and technology colophon](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/humans.txt).
 
 - **Ali Esmaili** _(Meticulous Developer)_: [AESM](https://github.com/AESM)
 - **Molly Allison-Baker** _(Brainstormer and Peer-Reviewer)_: [hermitina](https://github.com/hermitina)
 - **Eric Lawrence Dapp** _(Name and Logo Generator)_: [e-dapp](https://github.com/e-dapp)
-
-## Humans.txt
-
-[The humans responsible and technology colophon](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/humans.txt).
-
-The humans.txt movement is all about getting to know the people behind a website or project.  To find out more, visit [humanstxt.org](http://humanstxt.org/).
 
 ## License
 

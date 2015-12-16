@@ -6,6 +6,8 @@ RAPTORSMACSS Changelog
 ## 1.1.4
 
 - Improve optional `gulpfile.js` file
+- Remove BEM code
+- Create SMSP branch
 
 ## 1.1.3
 
