@@ -4,15 +4,10 @@
 //======================================================================//
 
 html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: $html-font-size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smooting: antialiased;
   -webkit-tap-highlight-color: transparent;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -22,16 +17,14 @@ html {
 }
 
 body {
-  background: $body-bg-color;
-  color: $body-color;
-  font: $body-font-size / $body-line-height $body-font;
+  background: $primary-bg-color;
   margin: 0;
 }
 
 a,
 button {
   color: inherit;
-  transition: $link-button-trans;
+  transition: $primary-duration;
 }
 
 a {

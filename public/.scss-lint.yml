@@ -12,6 +12,10 @@ linters:
   HexNotation:
     enabled: false
 
+  LeadingZero:
+    enabled: true
+    style: include_zero
+
   NameFormat:
     convention: '^([a-z][a-z]*(-{0,2}[a-z0-9]*)(_{0,2}[a-z0-9]*))*[^-_0-9]$'
 

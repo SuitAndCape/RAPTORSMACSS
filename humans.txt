@@ -14,7 +14,6 @@
   Personal GitHub: https://github.com/AESM
   Website: https://SuitAndCape.github.io/
   LinkedIn: https://www.linkedin.com/in/SuitAndCape
-  Dribbble: https://dribbble.com/SuitAndCape
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
@@ -22,14 +21,14 @@
 
   /*===== Support Team =====*/
     Name: Molly Allison-Baker
-    Role: Brainstormer and Peer-Reviewer
+    Role: Brainstormer & Peer-Reviewer
     Website: http://hermitina.com/
     LinkedIn: https://www.linkedin.com/in/mallisonbaker
     GitHub: https://github.com/hermitina
     Location: Southern Bay Area
 
     Name: Eric Lawrence Dapp
-    Role: Name and Logo Generator
+    Role: Name & Logo Generator
     Email: DappEr.ic@gmail.com
     GitHub: https://github.com/e-dapp
     Website: https://e-dapp.github.io
@@ -39,7 +38,7 @@
 
 /*== Info ==============================================================*/
 
-  Last update: 2015/12/11
+  Last update: 2016/01/08
   Languages: CSS3, HTML5
   Components: Sass (SCSS), Gulp.js, scss-lint, tidy-html5
   Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,

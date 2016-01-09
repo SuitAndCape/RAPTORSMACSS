@@ -3,15 +3,26 @@
 ////= Typographic Setup
 //======================================================================//
 
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: $primary-color;
+  font: ($body-font-size / 1) $body-font;
+}
+
 a,
 i {
   &:hover {
-    color: $link-icon-hover-color;
+    color: $quinary-color;
   }
 }
 
 a {
-  color: $link-color;
+  color: $quaternary-color;
   text-decoration: none;
 }
 
@@ -53,6 +64,6 @@ h6 {
 
 sub,
 sup {
-  font-size: $subp-font-size;
+  font-size: $sm-font-size;
   line-height: 0;
 }

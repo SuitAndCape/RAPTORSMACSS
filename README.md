@@ -112,9 +112,9 @@ These are the requirements to use the `gulpfile.js` file, as is...
 
 [The humans responsible and technology colophon](https://github.com/SuitAndCape/RAPTORSMACSS/blob/master/humans.txt).
 
-- **Ali Esmaili** _(Meticulous Developer)_: [AESM](https://github.com/AESM)
-- **Molly Allison-Baker** _(Brainstormer and Peer-Reviewer)_: [hermitina](https://github.com/hermitina)
-- **Eric Lawrence Dapp** _(Name and Logo Generator)_: [e-dapp](https://github.com/e-dapp)
+- **Ali Esmaili** _(Developer & Designer)_: [AESM](https://github.com/AESM)
+- **Molly Allison-Baker** _(Brainstormer & Peer-Reviewer)_: [hermitina](https://github.com/hermitina)
+- **Eric Lawrence Dapp** _(Name & Logo Generator)_: [e-dapp](https://github.com/e-dapp)
 
 ## License
 

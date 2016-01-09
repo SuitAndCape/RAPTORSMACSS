@@ -5,53 +5,53 @@
 
 //== Asset Path Assignments =============================================/
 
-$path-glyph: '../glyphs' !default;
-$path-img: '../images' !default;
-$path-js: '../javascripts' !default;
+$path-glyph: '../glyphs';
+$path-img: '../images';
+$path-js: '../javascripts';
+$path-font: $path-glyph + '/fonts';
+$path-icon: $path-glyph + '/icons';
 
 //== Glyph Stack Assignments ============================================/
 
-/// Sans-serif font stacks
-$font-stack-open-sans: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
-$font-stack-futura: Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif !default;
-
-/// Serif font stacks
-$font-stack-garamond: Garamond, Constantia, 'Times New Roman', Times, serif !default;
-
-/// Monospace font stacks
-$font-stack-consolas: 'Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-/// Variant and custom font stacks
-
-/// Icon stacks
+/// Font stacks
+$font-stack-open-sans: ('Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif);
+$font-stack-futura: (Futura, 'Trebuchet MS', Arial, Helvetica, sans-serif);
+$font-stack-garamond: (Garamond, Constantia, 'Times New Roman', Times, serif);
+$font-stack-consolas: ('Consolas', 'Courier New', 'Bitstream Vera Sans Mono', 'Monaco', monospace);
 
 //== Descriptive Color Assignments ======================================/
 
 /// Standard colors
-$clear: transparent !default;
-$black: #000000 !default;
-$red: #FF0000 !default;
-$maroon: #800000 !default;
-$blue: #0000FF !default;
+$black: #000000;
+$red: #FF0000;
+$blue: #0000FF;
 
 /// Variant and custom colors
-$gallery: #EFEFEF !default;
-$cod-gray: #0B0B0B !default;
-$java: #1FC2C2 !default;
-$pacific-blue: #009DC4 !default;
+$gallery: #EFEFEF;
+$cod-gray: #0B0B0B;
+$java: #1FC2C2;
+$pacific-blue: #009DC4;
 
 //== Reusable Variables =================================================/
 
-/// Image paths
-$path-bg-img: $path-img + '/backgrounds';
+/// Font stack usage
+$body-font: $font-stack-open-sans;
+$code-font: $font-stack-consolas;
+$main-heading-font: $font-stack-garamond;
+$sub-heading-font: $font-stack-futura;
 
 /// Color usage
-$primary-color: $red;
-$secondary-color: $maroon;
+$primary-color: $cod-gray;
+$secondary-color: $red;
 $tertiary-color: $blue;
 $quaternary-color: $pacific-blue;
 $quinary-color: $java;
+$primary-bg-color: $gallery;
 $shadow-color: rgba($black, 1);
+
+/// Body font-size
+/// Used with @pxem function
+$body-font-size: 18px;
 
 /// Font size usage
 $lg-font-size: 110%;
@@ -61,43 +61,9 @@ $sm-font-size: 70%;
 $primary-radius: 4px;
 $round-radius: 50%;
 
-/// Transition durations
-$primary-trans: .3s;
-
-//== Base Variables =====================================================/
-
-/// Glyphs – Font and icon paths
-$path-font: $path-glyph + '/fonts'; // => @font-face {src}
-$path-icon: $path-glyph + '/icons'; // => @font-face {src}
-
-/// Core – HTML font-size
-/// Used with @pxrem function
-$html-font-size: 16px; // => html {font-size}
-
-/// Core – Body font-size
-/// Used with @pxem function
-$body-font-size: 18px; // => body {font}
-
-/// Core – Body features
-$body-font: $font-stack-open-sans; // => body {font}
-$body-bg-color: $gallery; // => body {background}
-$body-line-height: 1; // => body {font}
-$body-color: $cod-gray; // => body {color}
-
-/// Core – Link and button features
-$link-button-trans: .2s; // => a,button {transition}
-
-/// Typography – Typographic glyph stacks
-$code-font: $font-stack-consolas; // => code {font-family}
-$main-heading-font: $font-stack-garamond; // => h1,h2,h3 {font-family}
-$sub-heading-font: $font-stack-futura; // => h4,h5,h6 {font-family}
-
-/// Typography – Typographic colors
-$link-color: $quaternary-color; // => a {color}
-$link-icon-hover-color: $quinary-color; // => a,i {&:hover{color}}
-
-/// Typography – Typographic font sizes
-$subp-font-size: $sm-font-size; // => sub,sup {font-size}
+/// Durations
+$primary-duration: 0.3s;
+$secondary-duration: 1s;
 
 //== Configuration Maps =================================================/
 
@@ -112,5 +78,5 @@ $breakpoints: (
   'lg': (min-width: 1024px),
   'xl': (min-width: 1200px),
   'xxl': (min-width: 1440px),
-  'xxxl': (min-width: 1920px)
+  'xxxl': (min-width: 1920px),
 );

@@ -1,70 +1,27 @@
-.center-align {
-  text-align: center;
-}
-
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.hide-text {
-  overflow: hidden;
-  padding: 0;
-  text-indent: 101%;
-  white-space: nowrap;
-}
-
-.no-bullets {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tupperware {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.22222em;
-  padding-right: 1.22222em;
-  width: 100%;
-}
-
 html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smooting: antialiased;
-  -webkit-tap-highlight-color: transparent;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-tap-highlight-color: transparent; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
   background: #EFEFEF;
-  color: #0B0B0B;
-  font: 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0;
-}
+  margin: 0; }
 
 a,
 button {
   color: inherit;
-  transition: 0.2s;
-}
+  transition: 0.2s; }
 
 a {
   background-color: transparent;
   display: inline-block;
-  position: relative;
-}
+  position: relative; }
 
 article,
 aside,
@@ -80,21 +37,18 @@ menu,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 button,
 input,
@@ -103,14 +57,12 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-}
+  margin: 0; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 button {
   background: none;
@@ -118,12 +70,9 @@ button {
   cursor: pointer;
   -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
-  overflow: visible;
-}
-
-button:focus {
-  outline: 0;
-}
+  overflow: visible; }
+  button:focus {
+    outline: 0; }
 
 h1,
 h2,
@@ -137,61 +86,64 @@ blockquote,
 button,
 figure {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 iframe {
-  border: 0;
-}
+  border: 0; }
 
 img {
   border: 0;
   height: auto;
-  max-width: 100%;
-}
+  max-width: 100%; }
+
+pre,
+textarea {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2; }
 
 sub,
 sup {
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
-  top: -0.44444em;
-}
+  top: -0.44444em; }
 
 sub {
-  bottom: -0.22222em;
-}
+  bottom: -0.22222em; }
 
 [hidden],
 template {
-  display: none;
-}
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  color: #0B0B0B;
+  font: 18px "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 a:hover,
 i:hover {
-  color: #1FC2C2;
-}
+  color: #1FC2C2; }
 
 a {
   color: #009DC4;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 blockquote,
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 code {
-  font-family: "Consolas", "Courier New", "Bitstream Vera Sans Mono", "Monaco", monospace;
-}
+  font-family: "Consolas", "Courier New", "Bitstream Vera Sans Mono", "Monaco", monospace; }
 
 h1,
 h2,
@@ -200,23 +152,47 @@ h4,
 h5,
 h6,
 p {
-  font-size: inherit;
-}
+  font-size: inherit; }
 
 h1,
 h2,
 h3 {
-  font-family: Garamond, Constantia, "Times New Roman", Times, serif;
-}
+  font-family: Garamond, Constantia, "Times New Roman", Times, serif; }
 
 h4,
 h5,
 h6 {
-  font-family: Futura, "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
+  font-family: Futura, "Trebuchet MS", Arial, Helvetica, sans-serif; }
 
 sub,
 sup {
   font-size: 70%;
-  line-height: 0;
-}
+  line-height: 0; }
+
+.center-align {
+  text-align: center; }
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap; }
+
+.no-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.tupperware {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.11111em;
+  padding-right: 1.11111em;
+  width: 100%; }
+
+/*# sourceMappingURL=raptor.css.map */
