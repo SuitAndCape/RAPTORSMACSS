@@ -1,11 +1,11 @@
 /* humanstxt.org */
 
 /***= Humans Text File
-========================================================================*/
+=============================================================================*/
 
   The humans responsible & technology colophon
 
-/*== Team ==============================================================*/
+/*== Team ===================================================================*/
 
   Name: Ali Esmaili
   Role: Developer & Designer
@@ -17,18 +17,18 @@
   Twitter: https://twitter.com/SuitAndCape
   Location: Southern Bay Area
 
-/*== Thanks ============================================================*/
+/*== Thanks =================================================================*/
 
   /*===== Support Team =====*/
     Name: Molly Allison-Baker
-    Role: Brainstormer & Peer-Reviewer
+    Role: Consultant
     Website: http://hermitina.com/
     LinkedIn: https://www.linkedin.com/in/mallisonbaker
     GitHub: https://github.com/hermitina
     Location: Southern Bay Area
 
     Name: Eric Lawrence Dapp
-    Role: Name & Logo Generator
+    Role: Consultant
     Email: DappEr.ic@gmail.com
     GitHub: https://github.com/e-dapp
     Website: https://e-dapp.github.io
@@ -36,10 +36,9 @@
     Bandcamp: https://ferc.bandcamp.com/
     Location: Southern Bay Area
 
-/*== Info ==============================================================*/
+/*== Info ===================================================================*/
 
-  Last update: 2016/01/08
+  Last update: 2016/01/21
   Languages: CSS3, HTML5
-  Components: Sass (SCSS), Gulp.js, scss-lint, tidy-html5
-  Development tools: Sublime Text 3, iTerm2, NPM, SublimeLinter,
-    Google Chrome
+  Components: Sass (SCSS) scss-lint, tidy-html5
+  Development tools: Sublime Text 3, iTerm2, SublimeLinter, Google Chrome

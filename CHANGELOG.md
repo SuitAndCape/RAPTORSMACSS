@@ -1,7 +1,22 @@
 <!-- CHANGELOG.md -->
 
 RAPTORSMACSS Changelog
-==========================================================================
+===============================================================================
+
+## 1.2.0
+
+- RAPTORSMACSS and RAPTORFrame
+  + Make RAPTORSMACSS an SCSS boilerplate and nothing else
+  + Make RAPTORFrame a Gulp driven frontend framework
+- Lighten basic file load
+- Add Glyphs folder
+- Remove `public/` directory
+- Update `README.md`
+- Create Info branch and move the following files there
+  + `CHANGELOG.md`
+  + `humans.txt`
+  + `LICENSE`
+  + `VERSION`
 
 ## 1.1.4
 
