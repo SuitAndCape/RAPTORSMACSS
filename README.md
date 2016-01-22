@@ -9,7 +9,6 @@ RAPTORSMACSS
 
 - [Title](#raptorsmacss)
 - [Usage](#usage)
-- [Riding the Raptor](#riding-the-raptor)
 - [ToDos](#todos)
 - [Team](#team)
 - [License](#license)
@@ -18,32 +17,33 @@ RAPTORSMACSS
 ## Usage
 
 ### Requirements
-[Ruby](https://www.ruby-lang.org/en/) 1.8.7+ & [Sass](https://github.com/sass/sass) 3.4.0+, or a Ruby Sass alternative.
+- Sass Option 1
+  + [Ruby](https://www.ruby-lang.org/en/) 1.8.7+ 
+  + [Sass](https://github.com/sass/sass) 3.4.0+
+- Sass Option 2
+  + A non-Ruby Sass alternative
 
 ### Installation
 1. Create a new project directory
-2. Place the `assets/` and `source/` directories from the `RAPTORSMACSS/` directory, into the base directory of your project
-3. Optionally, repeat the previous step with the other files found in the `RAPTORSMACSS/` directory (`index.html`, `.gitignore`, `rapticon-16x16.png` & `.ico`, etc.)
-4. Link your base file (eg. `index.html`) to the `raptor.min.css` or `raptor.css` stylesheet
+2. Place the `assets/` and `source/` directories from the `RAPTORSMACSS/` directory, into the base directory of your project (_do not_ transfer the `.git/` directory)
+3. Optionally, repeat the previous step with the other files found in the `RAPTORSMACSS/` directory (`index.html`, `.gitignore`, `rapticon-16x16.png`, etc.)
+4. Link your base file (eg. `index.html`) to the `raptor.min.css` or `raptor.css` stylesheet, found in the `assets/` directory
 
 ``` html
 <!-- EXAMPLE -->
 <link rel="stylesheet" type="text/css" href="assets/stylesheets/raptor.min.css" />
 ```
-5. Commence Raptoring!
 
-## Riding the Raptor
-
-### Sass Watch
+### Riding the Raptor
 Before making any modifications to the SCSS files, change to the base directory of your project, and run one of the following commands...
 
-- To watch and compile minified CSS and sourcemaps:
+- To watch the SCSS and compile minified CSS and sourcemaps:
 
 ``` sh
 sass --watch source/scss/raptor.scss:assets/stylesheets/raptor.min.css --style compressed
 ```
 
-- To watch and compile standard CSS and sourcemaps:
+- To watch the SCSS and compile standard CSS and sourcemaps:
 
 ``` sh
 sass --watch source/scss/raptor.scss:assets/stylesheets/raptor.css

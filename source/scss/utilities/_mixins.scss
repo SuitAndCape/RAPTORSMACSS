@@ -18,7 +18,6 @@
     &:focus {
       @content;
     }
-
   } @else {
     &:hover,
     &:active,
