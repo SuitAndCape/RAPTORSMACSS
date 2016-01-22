@@ -25,8 +25,8 @@ RAPTORSMACSS
 
 ### Installation
 1. Create a new project directory
-2. Place the `assets/` and `source/` directories from the `RAPTORSMACSS/` directory, into the base directory of your project (_do not_ transfer the `.git/` directory)
-3. Optionally, repeat the previous step with the other files found in the `RAPTORSMACSS/` directory (`index.html`, `.gitignore`, `rapticon-16x16.png`, etc.)
+2. Place the `assets/` and `source/` directories from the `RAPTORSMACSS/` directory, into the base directory of your project
+3. Optionally, repeat the previous step with the other files found in the `RAPTORSMACSS/` directory (`index.html`, `.gitignore`, `rapticon-16x16.png`, etc.) [_do not_ transfer the `.git/` directory]
 4. Link your base file (eg. `index.html`) to the `raptor.min.css` or `raptor.css` stylesheet, found in the `assets/` directory
 
 ``` html
