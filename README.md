@@ -68,7 +68,7 @@ sass --watch source/scss/raptor.scss:assets/stylesheets/raptor.css
 
 ## License
 
-This [project](#raptorsmacss) is copyright © 2015 Ali Esmaili | SuitAndCape.  It is free software that may be redistributed under the terms specified in the [LICENSE](https://github.com/SuitAndCape/RAPTORSMACSS/blob/Info/LICENSE).
+This [project](#raptorsmacss) is copyright © 2015-2016 Ali Esmaili | SuitAndCape.  It is free software that may be redistributed under the terms specified in the [LICENSE](https://github.com/SuitAndCape/RAPTORSMACSS/blob/Info/LICENSE).
 
 This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  For more information, visit the [Open Source Initiative](http://opensource.org/) website.
 
@@ -78,6 +78,6 @@ This is based on [The MIT License (MIT)](http://opensource.org/licenses/MIT).  F
 | ------------------------------------ | ------------------------------------ |
 **_SuitAndCape GitHub_** | https://github.com/SuitAndCape
 **_Personal GitHub_**    | https://github.com/AESM
-**_Website_**            | https://SuitAndCape.github.io/
+**_Website_**            | http://SuitAndCape.github.io/
 **_LinkedIn_**           | https://www.linkedin.com/in/SuitAndCape
 **_Twitter_**            | https://twitter.com/SuitAndCape
